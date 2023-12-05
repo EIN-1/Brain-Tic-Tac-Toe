@@ -36,7 +36,7 @@
       <h1>Brain Power Tic Tac</h1>
     </header>
 
-    <!--option box-->
+    <!--option box area-->
     <div class="option-box">
       <h2>Please make a choice!</h2>
       <button aria-label="playerX" data-choice="0" class="btn-playerX">
@@ -46,35 +46,42 @@
         Player (O)
       </button>
     </div>
-    <!--game area-->
-    <div class="game-area">
+    <!--game board area-->
+    <div class="game-board">
       <div class="details">
         <div class="players">
           <span class="Xturn">X-Turn</span>
           <span class="Oturn">O-Turn</span>
+          <div class="slider"></div>
         </div>
       </div>
-      <section>
-        <span class="box1"></span>
-        <span class="box2"></span>
-        <span class="box3"></span>
-      </section>
-      <section>
-        <span class="box4"></span>
-        <span class="box5"></span>
-        <span class="box6"></span>
-      </section>
-      <section>
-        <span class="box7"></span>
-        <span class="box8"></span>
-        <span class="box9"></span>
-      </section>
+      <div class="playing-area">
+        <section>
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+        </section>
+        <section>
+          <span class="box4"></span>
+          <span class="box5"></span>
+          <span class="box6"></span>
+        </section>
+        <section>
+          <span class="box7"></span>
+          <span class="box8"></span>
+          <span class="box9"></span>
+        </section>
+      </div>
     </div>
 
     <!--Results area-->
-    <div class="">
-      <p class="correct">winner <span id="win">1</span></p>
+    <div class="result-area">
+      <p class="correct">Winner <span id="win">1</span></p>
       <p class="lost">Try again <span id="lost">0</span></p>
+    </div>
+    <div class="won-text">
+      <h2>player X won the game!</h2>
+      <button aria-label="replay" class="btn-replay">Reply</button>
     </div>
 
     <!--Footer area-->

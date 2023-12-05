@@ -7,7 +7,9 @@ body {
     background-color: black;
 }
 
-.option-box {
+.option-box,
+.game-board,
+.result-area {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,9 +20,12 @@ body {
     font-weight: bold;
     padding: 10px 25px 15px;
     border-radius: 5px;
+}
+
+.option-box {
     background: rgb(64, 237, 159);
     color: blueviolet;
-
+    display: none;
 }
 
 .option-box button {
@@ -45,4 +50,79 @@ body {
 .btn-playerX {
     float: right;
     margin-bottom: 8px;
+}
+
+.game-board {
+    display: none;
+}
+
+.game-board .details {
+    background: whitesmoke;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.game-board section {
+    display: flex;
+}
+
+.game-board section span {
+    display: block;
+    margin: 3px;
+    height: 110px;
+    width: 110px;
+    background: rgb(64, 237, 159);
+    text-align: center;
+    line-height: 110px;
+    font-size: 90px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.game-board .details .players {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.game-board .details span {
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    padding: 7px 0;
+    cursor: default;
+    border-radius: 5px;
+    color: blueviolet;
+    text-align: center;
+    z-index: 5;
+}
+
+.details span:first-child {
+    color: rgb(64, 237, 159);
+}
+
+.details .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: blueviolet;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+.game-board .playing-area {
+    margin-top: 15px;
+}
+
+.result-area {
+    background: rgb(64, 237, 159);
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: blueviolet;
 }
