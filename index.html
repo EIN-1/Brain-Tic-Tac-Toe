@@ -24,19 +24,60 @@
       rel="stylesheet"
     />
 
-    <title>Brain Power Tic tac</title>
+    <title>Brain Power Tic Tac</title>
   </head>
 
   <body>
-    <h1 class="heading">
-      <img class="logo" src="assets/images/logo1.1.png" alt="logo" />
-      Brain Power Tic Tac
-    </h1>
-    <div class="game-zone"></div>
-    <div class="results-zone">
+    <!--Header-->
+    <header class="heading">
+      <h1>
+        <img class="logo" src="assets/images/logo1.1.png" alt="logo" />
+      </h1>
+      <h1>Brain Power Tic Tac</h1>
+    </header>
+
+    <!--option box-->
+    <div class="option-box">
+      <h2>Please make a choice!</h2>
+      <button aria-label="playerX" data-choice="0" class="btn-playerX">
+        Player (X)
+      </button>
+      <button aria-label="playerO" data-choice="1" class="btn-playerO">
+        Player (O)
+      </button>
+    </div>
+    <!--game area-->
+    <div class="game-area">
+      <div class="details">
+        <div class="players">
+          <span class="Xturn">X-Turn</span>
+          <span class="Oturn">O-Turn</span>
+        </div>
+      </div>
+      <section>
+        <span class="box1"></span>
+        <span class="box2"></span>
+        <span class="box3"></span>
+      </section>
+      <section>
+        <span class="box4"></span>
+        <span class="box5"></span>
+        <span class="box6"></span>
+      </section>
+      <section>
+        <span class="box7"></span>
+        <span class="box8"></span>
+        <span class="box9"></span>
+      </section>
+    </div>
+
+    <!--Results area-->
+    <div class="">
       <p class="correct">winner <span id="win">1</span></p>
       <p class="lost">Try again <span id="lost">0</span></p>
     </div>
+
+    <!--Footer area-->
 
     <script src="assets/js/script.js"></script>
   </body>

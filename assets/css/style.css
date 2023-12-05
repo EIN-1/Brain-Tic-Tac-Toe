@@ -2,9 +2,47 @@
 
 body {
     margin: 0;
-    font-family: 'Familjen Grotesk', sans-serif;
-    font-family: 'Noto Sans Symbols', sans-serif;
     font-weight: 350;
     color: blueviolet;
-    background-color: whitesmoke;
+    background-color: black;
+}
+
+.option-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    max-width: 330px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px 15px;
+    border-radius: 5px;
+    background: rgb(64, 237, 159);
+    color: blueviolet;
+
+}
+
+.option-box button {
+    font-weight: bold;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: blueviolet;
+    color: rgb(64, 237, 159);
+    transition: all 0.2s ease;
+}
+
+.option-box button:hover {
+    transform: scale(1.30);
+}
+
+.btn-playerX {
+    float: left;
+    margin-bottom: 8px;
+}
+
+.btn-playerX {
+    float: right;
+    margin-bottom: 8px;
 }
