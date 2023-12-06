@@ -8,8 +8,7 @@ body {
 }
 
 .option-box,
-.game-board,
-.result-area {
+.game-board {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,7 +16,7 @@ body {
     transform: translate(-50%, -50%);
     max-width: 330px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 10px 25px 15px;
     border-radius: 5px;
 }
@@ -35,7 +34,7 @@ body {
     border-radius: 5px;
     background: blueviolet;
     color: rgb(64, 237, 159);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .option-box button:hover {
@@ -52,10 +51,6 @@ body {
     margin-bottom: 8px;
 }
 
-.game-board {
-    display: none;
-}
-
 .game-board .details {
     background: whitesmoke;
     padding: 7px;
@@ -69,8 +64,8 @@ body {
 .game-board section span {
     display: block;
     margin: 3px;
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 100px;
     background: rgb(64, 237, 159);
     text-align: center;
     line-height: 110px;
@@ -86,7 +81,7 @@ body {
     justify-content: space-between;
 }
 
-.game-board .details span {
+.game-board .details span  {
     position: relative;
     width: 100%;
     font-weight: bold;
@@ -118,11 +113,22 @@ body {
     margin-top: 15px;
 }
 
-.result-area {
-    background: rgb(64, 237, 159);
+.game-board .score-area span  {
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 8px;
+    margin-top: 5px;
+    cursor: default;
+    color: rgb(64, 237, 159);
+    background: blueviolet;;
     text-align: center;
-    line-height: 10px;
-    font-size: 30px;
-    font-weight: bolder;
-    color: blueviolet;
+}
+
+.game-board .score-area {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
 }
