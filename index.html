@@ -23,18 +23,18 @@
       href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Noto+Sans+Symbols:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!--- favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
     <title>Brain Power Tic Tac</title>
   </head>
 
   <body>
     <!--Header-->
-    <header class="heading">
-      <h1>
-        <img class="logo" src="assets/images/logo1.1.png" alt="logo" />
-      </h1>
-      <h1>Brain Power Tic Tac</h1>
-    </header>
+    <div class="head">
+      <div ><img class="logo" src="assets/images/logo.png" alt="logo"></div>
+      <div class="heading"><h1>Brain Power Tic Tac</h1></div>
+    </div>
 
     <!--option box area-->
     <div class="option-box">
@@ -46,7 +46,7 @@
         Player (O)
       </button>
     </div>
-    <!--game board area-->-
+    <!--game board area-->
     <div class="game-board">
       <div class="details">
         <div class="players">
@@ -57,13 +57,13 @@
       </div>
       <div class="playing-area">
         <section>
-          <span class="box1"></span>
-          <span class="box2"></span>
-          <span class="box3"></span>
+          <span class="box1">O</span>
+          <span class="box2">X</span>
+          <span class="box3">O</span>
         </section>
         <section>
           <span class="box4"></span>
-          <span class="box5"></span>
+          <span class="box5">O</span>
           <span class="box6"></span>
         </section>
         <section>
@@ -82,8 +82,8 @@
     <!--winner's box -->
 
     <div class="winner-box">
-      <h2>player X won the game!</h2>
-      <button aria-label="replay" class="btn-replay">Reply</button>
+      <h2>Player X won the game!</h2>
+      <button aria-label="replay" class="btn-replay">Replay</button>
     </div>
 
     <!--Footer area-->

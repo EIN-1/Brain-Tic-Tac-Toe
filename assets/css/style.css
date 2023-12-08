@@ -6,9 +6,30 @@ body {
     color: blueviolet;
     background-color: black;
 }
-
+.head{
+    position: fixed;
+    padding: 20px;
+}
+.logo{
+    position: fixed;
+    top:7%;
+    left: 0.5%;
+    width: 20%;
+    max-width: 144px;
+}
+.heading{
+    position: fixed;
+    top: 9.5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    max-width: 330px;
+    font-size: 25px;
+    text-align: center;
+    color: white; 
+}
 .option-box,
-.game-board {
+.game-board, .winner-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,15 +42,20 @@ body {
     border-radius: 5px;
 }
 
-.option-box {
-    background: rgb(64, 237, 159);
-    color: blueviolet;
+.option-box{
     display: none;
 }
 
-.option-box button {
+.winner-box{
+    display: none;
+}
+.option-box, .winner-box {
+    background: rgb(64, 237, 159);
+    color: blueviolet;}
+
+.option-box button, .winner-box button {
     font-weight: bold;
-    padding: 8px 15px 8px;
+    padding: 8px 15px 10px;
     cursor: pointer;
     border-radius: 5px;
     background: blueviolet;
@@ -37,7 +63,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.option-box button:hover {
+.option-box button:hover, .winner-box button:hover {
+    color:blueviolet;
+    background: white;
     transform: scale(1.30);
 }
 
@@ -51,10 +79,12 @@ body {
     margin-bottom: 8px;
 }
 
+
 .game-board .details {
     background: whitesmoke;
     padding: 7px;
     border-radius: 5px;
+    
 }
 
 .game-board section {
@@ -64,12 +94,12 @@ body {
 .game-board section span {
     display: block;
     margin: 3px;
-    height: 100px;
-    width: 100px;
+    height: 112px;
+    width: 112px;
     background: rgb(64, 237, 159);
     text-align: center;
-    line-height: 110px;
-    font-size: 90px;
+    line-height: 112px;
+    font-size: 112px;
     font-weight: bolder;
     color: blueviolet;
 }
@@ -131,4 +161,11 @@ body {
     width: 100%;
     position: relative;
     justify-content: space-between;
+}
+
+.winner-box button{
+    position: relative;
+    left: 35%;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
