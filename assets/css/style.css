@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Noto+Sans+Symbols:wght@300&display=swap');
-
+/* main view setup*/
+html{
+    min-height: 100%;
+    position: relative;
+}
 body {
     margin: 0;
     font-weight: 350;
     color: blueviolet;
     background-color: black;
+}
+/* header and footer*/
+header{
+    text-align: center;
+    height: 30px;
+}
+footer{
+    position: fixed;
+    clear: both;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+    font-size: 100%;
+    text-align: center;
+    background-color: white;
 }
 .head{
     position: fixed;
@@ -33,7 +53,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 75%;
     transform: translate(-50%, -50%);
     max-width: 330px;
     font-size: 20px;
