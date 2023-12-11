@@ -10,25 +10,15 @@ body {
     color: blueviolet;
     background-color: black;
 }
-/* header and footer*/
+/* header */
 header{
     text-align: center;
     height: 30px;
 }
-footer{
-    position: fixed;
-    clear: both;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 1px;
-    font-size: 100%;
-    text-align: center;
-    background-color: white;
-}
+
 .head{
     position: fixed;
-    padding: 20px;
+    padding: 8px;
 }
 .logo{
     position: fixed;
@@ -48,8 +38,7 @@ footer{
     text-align: center;
     color: white; 
 }
-.option-box,
-.game-board, .winner-box {
+.option-box, .game-board, .winner-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,6 +51,30 @@ footer{
     border-radius: 5px;
 }
 
+.cellBox{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size:50px;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(64, 237, 159);
+    color: blueviolet;
+}
+
+.playing-area{
+    font-family: "permanent Marker";
+    text-align: center;
+}
+.boxContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+    background: yellow;
+}
 .option-box{
     display: none;
 }
@@ -98,39 +111,22 @@ footer{
     float: right;
     margin-bottom: 8px;
 }
-
-
+.game-board .playing-area {
+    margin-top: 5px;
+}
 .game-board .details {
     background: whitesmoke;
     padding: 7px;
     border-radius: 5px;
-    
+    display: none; 
 }
-
-.game-board section {
-    display: flex;
-}
-
-.game-board section span {
-    display: block;
-    margin: 3px;
-    height: 112px;
-    width: 112px;
-    background: rgb(64, 237, 159);
-    text-align: center;
-    line-height: 112px;
-    font-size: 112px;
-    font-weight: bolder;
-    color: blueviolet;
-}
-
 .game-board .details .players {
     display: flex;
     width: 100%;
     position: relative;
     justify-content: space-between;
+    display: none;
 }
-
 .game-board .details span  {
     position: relative;
     width: 100%;
@@ -141,10 +137,12 @@ footer{
     color: blueviolet;
     text-align: center;
     z-index: 5;
+    display: none;
 }
 
 .details span:first-child {
     color: rgb(64, 237, 159);
+    display: none;
 }
 
 .details .slider {
@@ -156,16 +154,14 @@ footer{
     background: blueviolet;
     border-radius: 5px;
     z-index: 2;
+    display: none;
 
 }
 
-.game-board .playing-area {
-    margin-top: 15px;
-}
 
-.game-board .score-area span  {
+.game-board {
     position: relative;
-    width: 100%;
+    width: 75%;
     font-size: 25px;
     font-weight: bold;
     padding: 10px 8px;
@@ -176,7 +172,7 @@ footer{
     text-align: center;
 }
 
-.game-board .score-area {
+.game-board {
     display: flex;
     width: 100%;
     position: relative;
@@ -188,4 +184,15 @@ footer{
     left: 35%;
     margin-bottom: 8px;
     font-size: 20px;
+}
+/* footer*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+    font-size: 100%;
+    text-align: center;
+    background-color: white;
 }
