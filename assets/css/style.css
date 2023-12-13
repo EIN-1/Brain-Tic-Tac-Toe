@@ -63,12 +63,15 @@ header{
     max-width: 330px;
     font-size: 20px;
     font-weight: bolder;
+    text-align: center;
     padding: 10px 25px 15px;
     border-radius: 5px;
 }
-.option-box{
-    display: none;
-}
+.option-box.hide{
+    opacity: 0;
+    pointer-events: none;
+  }
+
 .won-text-box {
     position: relative;
     width: 75%;
@@ -87,6 +90,9 @@ header{
     background: rgb(64, 237, 159);
     color: blueviolet;
     text-align: center;
+}
+.option-box{
+    display: none;
 }
   
   .option-box button, .won-text-box button {
@@ -118,6 +124,11 @@ header{
     margin-top: 0;
     text-align: center;
     margin: 0 auto;
+  }
+  #game-container.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
   }
   .turns-Container {
     width: 160px;
