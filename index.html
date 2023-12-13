@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content=" brain power tic tac increases your focus and strenghten your brain hence increasing your intellegence"
+      content=" brain power tic tac toe increases your focus and strenghtens your brain hence increasing your intellegence"
     />
-    <meta name="keywords" content="brain, power, tic tac, brain power" />
+    <meta name="keywords" content="brain power, tic tac toe, tic tac" />
     <meta name="author" content="Elsie Nagawa" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <!--- font Awesome and google fonts-->
@@ -26,7 +26,7 @@
     <!--- favicon-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
-    <title>Brain Power Tic Tac Toe</title>
+    <title>Tic Tac Toe</title>
   </head>
 
   <body>
@@ -34,27 +34,32 @@
     <header>
         <div class="head">
             <div ><img class="logo" src="assets/images/logo.png" alt="logo"></div>
-            <div class="heading"><h1>Brain Power Tic Tac Toe</h1></div>
+            <div class="heading"><h1>Tic Tac Toe</h1></div>
         </div>
     </header>
 
-    <!--option box area-->s="option-box">
+    <!--option box area-->
+  <div class="option-box">
+      <h2>Please make a choice!</h2>
+      <button aria-label="playerX" data-choice="0" class="btn-playerX">
         Player (X)
       </button>
       <button aria-label="playerO" data-choice="1" class="btn-playerO">
         Player (O)
       </button>
     </div>
-    <!--game board area-->
-    <div class="game-board">
+    <!--game container area-->
+    <div id="game-container">
         <div class="details">
-            <div class="players">
-                <span class="Xturn">X-Turn</span>
-                <span class="Oturn">O-Turn</span>
-          <div class="slider"></div>
+            <div class="turns-Container">
+                <h3>Whose Turn</h3>
+                <div class="turn align">X</div>
+                <div class="turn align">O</div>
+                <div class="slider"></div>
+            </div>
         </div>
         <div class="playing-area">
-            <div class="boxContainer">
+            <div id="boxContainer">
                 <div cellIndex="0" class="cellBox"></div>
                 <div cellIndex="1" class="cellBox"></div>
                 <div cellIndex="2" class="cellBox"></div>
@@ -66,15 +71,18 @@
                 <div cellIndex="8" class="cellBox"></div>
             </div>
         </div>
+        <!--winner's box -->
+        <div class="won-text-box"> 
+            <h2>Player X won!</h2>
+            <button aria-label="replay" class="btn-replay">Replay</button>
+        </div>
     </div>
 
-    <!--winner's box -->
-    <div class="winner-box">
-      <div class="won-text">Player <p>X</p>won the game!</div>
-      <button aria-label="replay" class="btn-replay">Replay</button>
-    </div>
+    
+    
     <!--Footer area-->
-    <footer><h3>Game rules</h3>
+    <footer>
+        <h3>Game rules</h3>
         <p> choose X or O , the more you win the more you increase your brain power and focus skill.</p>
     </footer>
 

@@ -1,44 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Noto+Sans+Symbols:wght@300&display=swap');
 /* main view setup*/
+*{
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
 html{
     min-height: 100%;
     position: relative;
+    
+}
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 body {
     margin: 0;
     font-weight: 350;
     color: blueviolet;
     background-color: black;
+    text-align: center;
+
 }
 /* header */
 header{
+    left: 0;
+    width: 100%;
+    height: 50px;
     text-align: center;
-    height: 30px;
+    background-color: black;
+    position: relative; 
 }
 
 .head{
-    position: fixed;
-    padding: 8px;
+    position: absolute;
+    width: 100%;
 }
 .logo{
-    position: fixed;
-    top:7%;
+    position: absolute;
+    top:3%;
     left: 0.5%;
-    width: 20%;
-    max-width: 144px;
+    width: 10%;
+    max-width: 50px;
 }
 .heading{
-    position: fixed;
-    top: 9.5%;
+    position: relative;
+    top: 3%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-    max-width: 330px;
-    font-size: 25px;
+    max-width: 200px;
+    font-size: 18px;
     text-align: center;
     color: white; 
 }
-.option-box, .game-board, .winner-box {
+.option-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,149 +66,131 @@ header{
     padding: 10px 25px 15px;
     border-radius: 5px;
 }
-
-.cellBox{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size:50px;
-    text-align: center;
-    cursor: pointer;
-    background: rgb(64, 237, 159);
-    color: blueviolet;
-}
-
-.playing-area{
-    font-family: "permanent Marker";
-    text-align: center;
-}
-.boxContainer{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto;
-    background: yellow;
-}
 .option-box{
     display: none;
 }
-
-.winner-box{
-    display: none;
+.won-text-box {
+    position: relative;
+    width: 75%;
+    line-height: 40px;
+    max-width: 225px;
+    margin: 15px auto;
+    font-size: 15px;
+    border-radius: 5px;
 }
-.option-box, .winner-box {
-    background: rgb(64, 237, 159);
-    color: blueviolet;}
+.won-text-box button{
+    margin-top: 0.1px;
+    margin-bottom: 10px;
+}
 
-.option-box button, .winner-box button {
+  .option-box, .won-text-box {
+    background: rgb(64, 237, 159);
+    color: blueviolet;
+    text-align: center;
+}
+  
+  .option-box button, .won-text-box button {
+    position: relative;
     font-weight: bold;
-    padding: 8px 15px 10px;
+    padding: 7px 10px 8px;
     cursor: pointer;
     border-radius: 5px;
     background: blueviolet;
     color: rgb(64, 237, 159);
     transition: all 0.3s ease;
-}
-
-.option-box button:hover, .winner-box button:hover {
+  }
+  
+  .option-box button:active, .won-text-box button:active {
     color:blueviolet;
     background: white;
-    transform: scale(1.30);
-}
-
-.btn-playerX {
+  }
+  
+  .btn-playerX {
     float: left;
     margin-bottom: 8px;
-}
-
-.btn-playerX {
+  }
+  
+  .btn-playerO {
     float: right;
     margin-bottom: 8px;
-}
-.game-board .playing-area {
-    margin-top: 5px;
-}
-.game-board .details {
-    background: whitesmoke;
-    padding: 7px;
-    border-radius: 5px;
-    display: none; 
-}
-.game-board .details .players {
-    display: flex;
-    width: 100%;
-    position: relative;
-    justify-content: space-between;
-    display: none;
-}
-.game-board .details span  {
-    position: relative;
-    width: 100%;
-    font-weight: bold;
-    padding: 7px 0;
-    cursor: default;
-    border-radius: 5px;
-    color: blueviolet;
+  }
+  #game-container{
+    margin-top: 0;
     text-align: center;
-    z-index: 5;
-    display: none;
-}
-
-.details span:first-child {
-    color: rgb(64, 237, 159);
-    display: none;
-}
-
-.details .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    background: blueviolet;
-    border-radius: 5px;
-    z-index: 2;
-    display: none;
-
-}
-
-
-.game-board {
+    margin: 0 auto;
+  }
+  .turns-Container {
+    width: 160px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    margin-top: 2px;
+    bottom: 9px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     position: relative;
-    width: 75%;
+  }
+  .turns-Container h3{
+    margin-top:5%;
+    margin-bottom: 9px;
+    grid-column-start: 1;
+    grid-column-end: 3;
     font-size: 25px;
-    font-weight: bold;
-    padding: 10px 8px;
-    margin-top: 5px;
-    cursor: default;
-    color: rgb(64, 237, 159);
-    background: blueviolet;;
-    text-align: center;
-}
-
-.game-board {
-    display: flex;
+    font-weight: 150px;
+    background : whitesmoke;
+  }
+  .turns-Container .turn{
+    border: 2px solid blueviolet;
+    font-size: 25px;
+    font-weight: 225px;
+  }
+  .turns-Container .turn:nth-child(even){
+    border-right: none;
+  }
+  .slider{
+    position:absolute;
+    top: 60%;
+    left: 0;
+    width: 50%;
+    height: 30px;
+    background-color: rgb(64, 237, 159); 
+    z-index: -1; 
+  }
+.cellBox{
     width: 100%;
-    position: relative;
-    justify-content: space-between;
+    height: 100%;
+    font-size: 80px;
+    line-height: 105px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px;
 }
+#boxContainer{
+    bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 330px;
+    width: 330px;
+    border: 4px solid;
+    margin: 10px auto;
+    background-color: rgb(64, 237, 159);
+    position: relative;
+}
+.cellBox:hover{
+    background-color: blueviolet;
+}
+  
 
-.winner-box button{
-    position: relative;
-    left: 35%;
-    margin-bottom: 8px;
-    font-size: 20px;
-}
 /* footer*/
 footer{
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
-    padding: 1px;
-    font-size: 100%;
+    font-size: 15px;
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
 }
+
+
