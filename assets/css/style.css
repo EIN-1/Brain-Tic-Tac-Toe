@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Noto+Sans+Symbols:wght@300&display=swap');
+
 /* main view setup*/
-*{
+* {
     transition: 0.2s ease-in-out;
     user-select: none;
 }
-html{
+
+html {
     min-height: 100%;
     position: relative;
-    
+
 }
+
 .align {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 body {
     margin: 0;
     font-weight: 350;
@@ -22,28 +26,31 @@ body {
     text-align: center;
 
 }
+
 /* header */
-header{
+header {
     left: 0;
     width: 100%;
     height: 50px;
     text-align: center;
     background-color: black;
-    position: relative; 
+    position: relative;
 }
 
-.head{
+.head {
     position: absolute;
     width: 100%;
 }
-.logo{
+
+.logo {
     position: absolute;
-    top:3%;
+    top: 3%;
     left: 0.5%;
     width: 10%;
     max-width: 50px;
 }
-.heading{
+
+.heading {
     position: relative;
     top: 3%;
     left: 50%;
@@ -52,11 +59,16 @@ header{
     max-width: 200px;
     font-size: 18px;
     text-align: center;
-    color: white; 
+    color: white;
 }
+
+.option-box {
+    /* display: none; */
+}
+
 .option-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     width: 75%;
     transform: translate(-50%, -50%);
@@ -67,10 +79,11 @@ header{
     padding: 10px 25px 15px;
     border-radius: 5px;
 }
-.option-box.hide{
+
+.option-box.hide {
     opacity: 0;
     pointer-events: none;
-  }
+}
 
 .won-text-box {
     position: relative;
@@ -81,21 +94,23 @@ header{
     font-size: 15px;
     border-radius: 5px;
 }
-.won-text-box button{
+
+.won-text-box button {
     margin-top: 0.1px;
     margin-bottom: 10px;
 }
 
-  .option-box, .won-text-box {
+.option-box,
+.won-text-box {
     background: rgb(64, 237, 159);
     color: blueviolet;
     text-align: center;
 }
-.option-box{
-    display: none;
-}
-  
-  .option-box button, .won-text-box button {
+
+
+
+.option-box button,
+.won-text-box button {
     position: relative;
     font-weight: bold;
     padding: 7px 10px 8px;
@@ -104,33 +119,37 @@ header{
     background: blueviolet;
     color: rgb(64, 237, 159);
     transition: all 0.3s ease;
-  }
-  
-  .option-box button:active, .won-text-box button:active {
-    color:blueviolet;
+}
+
+.option-box button:active,
+.won-text-box button:active {
+    color: blueviolet;
     background: white;
-  }
-  
-  .btn-playerX {
+}
+
+.btn-playerX {
     float: left;
     margin-bottom: 8px;
-  }
-  
-  .btn-playerO {
+}
+
+.btn-playerO {
     float: right;
     margin-bottom: 8px;
-  }
-  #game-container{
+}
+
+#game-container {
     margin-top: 0;
     text-align: center;
     margin: 0 auto;
-  }
-  #game-container.show{
+}
+
+#game-container.show {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
-  }
-  .turns-Container {
+}
+
+.turns-Container {
     width: 160px;
     height: 80px;
     margin: auto;
@@ -140,34 +159,39 @@ header{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     position: relative;
-  }
-  .turns-Container h3{
-    margin-top:5%;
+}
+
+.turns-Container h3 {
+    margin-top: 5%;
     margin-bottom: 9px;
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 25px;
     font-weight: 150px;
-    background : whitesmoke;
-  }
-  .turns-Container .turn{
+    background: whitesmoke;
+}
+
+.turns-Container .turn {
     border: 2px solid blueviolet;
     font-size: 25px;
     font-weight: 225px;
-  }
-  .turns-Container .turn:nth-child(even){
+}
+
+.turns-Container .turn:nth-child(even) {
     border-right: none;
-  }
-  .slider{
-    position:absolute;
+}
+
+.slider {
+    position: absolute;
     top: 60%;
     left: 0;
     width: 50%;
     height: 30px;
-    background-color: rgb(64, 237, 159); 
-    z-index: -1; 
-  }
-.cellBox{
+    background-color: rgb(64, 237, 159);
+    z-index: -1;
+}
+
+.cellBox {
     width: 100%;
     height: 100%;
     font-size: 80px;
@@ -176,7 +200,8 @@ header{
     font-weight: bold;
     box-shadow: 0 0 0 2px;
 }
-#boxContainer{
+
+#boxContainer {
     bottom: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,13 +213,14 @@ header{
     background-color: rgb(64, 237, 159);
     position: relative;
 }
-.cellBox:hover{
+
+.cellBox:hover {
     background-color: blueviolet;
 }
-  
+
 
 /* footer*/
-footer{
+footer {
     position: absolute;
     left: 0;
     bottom: 0%;
@@ -204,4 +230,10 @@ footer{
     background-color: whitesmoke;
 }
 
+.hide {
+    display: none;
+}
 
+.show {
+    display: block;
+}
