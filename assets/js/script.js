@@ -199,6 +199,4 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.click();
         }, 500); // Adjust the delay as needed
     }
-
-
-});
+})
