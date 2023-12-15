@@ -1,8 +1,10 @@
-<h1 align="center">Thrive Juices and Smoothies Website</h1>
+<h1 align="center"> Brain Tic Tac Toe</h1>
 
 [View the live project here](https://elainebroche-dev.github.io/ms1-thrive/)
 
-THRIVE Juices and Smoothies is a site that advertises a fictional refreshment business.  The business primarily sells juices and smoothies and also a limited range of healthy snacks and hot beverages.  The site is targeted toward people who want to buy healthy refreshments "on the go" - the business also has a seating area for anyone who wants to stay and socialise but its primary USP is the appeal, taste and quality of the products.  The site will be useful for people who want to check out the range of products available, the location and opening hours of the business.
+Brain Tic Tac Toe is a fun game played by two players, the player chooses to be X or O. Some times one can sense the next move by simply looking at the component's impression, by playing with a computer as your component, it's trickier and fun to play with a random move player because you can't see the computer's expressions.
+
+The users of this game improves their virtue and focus skill in due time, because the more you play this game, the better your intellegence improves.
 
 ![Mockup](documentation/supp-images/resp-mockup.png)
 
@@ -10,7 +12,7 @@ THRIVE Juices and Smoothies is a site that advertises a fictional refreshment bu
 * [Features](#features)
 * [Design](#design)
 * [Technologies Used](#technologies-used)
-* [Testing](#testing)
+* [esting](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
@@ -21,8 +23,8 @@ THRIVE Juices and Smoothies is a site that advertises a fictional refreshment bu
 
 -   __Header__
 
-    - at the left corner is a game logo  and the name:  Brain Tic Tac Toe in the center of the header.
-    - The logo and the name of the game clearly tells the user that the game is for smart people.
+    - The game consists of a logo and the name:  Brain Tic Tac Toe in the center of the header which is good for user interface.
+    - The logo and the name of the game clearly tells the user, that the game is for smart people.
 
       ![Navbar](documentation/supp-images/f01-nav-bar.png)
 
