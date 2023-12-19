@@ -79,6 +79,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - violetblue
 - white smoke
 - green
+![design](documentation/gameImages/Footer-img.png)
 
 ## Technologies Used
 
