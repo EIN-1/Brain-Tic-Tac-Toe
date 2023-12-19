@@ -26,6 +26,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
     - The game consists of a logo on the left and center has the name:  Brain Tic Tac Toe in the center of the header which is good for user interface.
     - The logo and the name of the game clearly tells the user, that the game is for smart people.
 
+      ![logo](documentation/gameImages/readMe-logo.png)
       ![Header](documentation/gameImages/header-img.png)
 
 
@@ -36,15 +37,18 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
       ![Option](documentation/gameImages/option-img.png)
 
--   __Result text and Replay button__
+-   __Start game and Replay button__
 
     - Once the user wins, it pops a winner message, Tie or Try again if you lose then the game is over.
     - User can click replay button to re-start the game.
-    - The Replay button will take the user back to make option section and the user can choose who to be either X or O.
+   
+      ![start game](documentation/gameImages/game-start.png)
 
-      ![start game](documentation/gameImages/game-start.png), ![game results](documentation/gameImages/game-results.png)
 
+-   __Game results and Replay button__
 
+     - The Replay button will take the user back to make option section and the user can choose who to be either X or O.
+      ![game results](documentation/gameImages/game-results.png)
 
 -   __Footer__
 
