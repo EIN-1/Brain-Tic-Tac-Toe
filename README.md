@@ -87,7 +87,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 ### Frameworks, Libraries & Programs Used
 
--   [Google Fonts:](https://fonts.google.com/) was used to import the 'Lato' and 'Oswald' fonts into the style.css file which are used this project.
+-   [Google Fonts:](https://fonts.google.com/) was used to import the 'Familjen and Grotesk' fonts into the style.css file which are used in this project.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
 -   [iLoveIMG:](https://www.iloveimg.com/) was used for resizing image logo for the website.
@@ -139,7 +139,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
     
 ### Test Cases and Results
 
-- The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click to open iamge):
+- The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click to open image):
 
   ![Test Results](documentation/supp-images/test-cases.png)
 
