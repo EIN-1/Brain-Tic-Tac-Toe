@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function displayWinner(winner) {
-        wonTextBox.querySelector('.won-text').textContent = winner === 'Tie' ? 'It\'s a Tie!' : `Player ${winner} won!`;
+        wonTextBox.querySelector('.won-text').textContent = winner === 'Tie' ? "It's a Tie!" : `Player ${winner} won!`;
         wonTextBox.classList.remove('hide');
         gameEnded =true
     }

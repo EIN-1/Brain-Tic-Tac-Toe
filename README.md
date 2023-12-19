@@ -1,12 +1,12 @@
 <h1 align="center"> Brain Tic Tac Toe</h1>
 
-[View the live project here](https://elainebroche-dev.github.io/ms1-thrive/)
+[View the live project here](https://ein-1.github.io/Brain-Tic-Tac-Toe/)
 
 Brain Tic Tac Toe is a fun game played by two players, the player chooses to be X or O. Some times one can sense the next move by simply looking at the component's impression, by playing with a computer as your component, it's trickier and fun to play with a random move player because you can't see the computer's expressions.
 
 The users of this game improves their virtue and focus skill in due time, because the more you play this game, the better your intellegence improves.
 
-![Mockup](documentation/supp-images/resp-mockup.png)
+![Mockup](documentation/gameImages/responsive-img.png)
 
 ## Index – Table of Contents
 * [Features](#features)
@@ -23,10 +23,10 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 -   __Header__
 
-    - The game consists of a logo and the name:  Brain Tic Tac Toe in the center of the header which is good for user interface.
+    - The game consists of a logo on the left and center has the name:  Brain Tic Tac Toe in the center of the header which is good for user interface.
     - The logo and the name of the game clearly tells the user, that the game is for smart people.
 
-      ![Navbar](documentation/supp-images/f01-nav-bar.png)
+      ![Header](documentation/gameImages/header-img.png)
 
 
 -   __Make a choose__
@@ -34,15 +34,15 @@ The users of this game improves their virtue and focus skill in due time, becaus
     - The option box tells the player to choose from Prayer(O) or Prayer(O) before the game starts.
     - Once a user chooses a prayer, the game can only begin once the user clicks the button.
 
-      ![Navbar](documentation/supp-images/f01-nav-bar.png)
+      ![Option](documentation/gameImages/option-img.png)
 
 -   __Result text and Replay button__
 
     - Once the user wins, it pops a winner message, Tie or Try again if you lose then the game is over.
     - User can click replay button to re-start the game.
-    - The Replay button will take the user back to the make a choose section.
+    - The Replay button will take the user back to make option section and the user can choose who to be either X or O.
 
-      ![Navbar](documentation/supp-images/f01-nav-bar.png)
+      ![start game](documentation/gameImages/game-start.png), ![game results](documentation/gameImages/game-results.png)
 
 
 
@@ -51,7 +51,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
     - The Footer shows the rules of Brain Power Tic Tac Toe.
     - The footer clearly states the rules on how to ply the game, this is crucial to the user.
 
-      ![Footer](documentation/supp-images/f05-footer.png)
+      ![Footer](documentation/gameImages/Footer-img.png)
 
 
 
@@ -85,15 +85,15 @@ The users of this game improves their virtue and focus skill in due time, becaus
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 
-### Frameworks, Libraries & Programs Used
+### Libraries & Programs Used
 
 -   [Google Fonts:](https://fonts.google.com/) was used to import the 'Familjen and Grotesk' fonts into the style.css file which are used in this project.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [iLoveIMG:](https://www.iloveimg.com/) was used for resizing image logo for the website.
+-   [iLoveIMG:](https://www.iloveimg.com/) was used for resizing images.
 -   [favicon:](https://www.favicon.cc/) was used to add icon in the browser.
 -   [logomaker:](https://www.logomaker.net/) was used to have a logo for aesthetic and UX purposes.
--   [iloveimg:](https://www.iloveimg.com/) was used to resize the logo I created to have a specific size.
+-   [remove image background](https://www.remove.bg/) was used to remove the logo background.
 
 
 ## Testing
@@ -162,27 +162,27 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 ### How to clone the repository
 
-- Go to the https://github.com/elainebroche-dev/ms1-thrive repository on GitHub 
+- Go to the https://github.com/EIN-1/Brain-Tic-Tac-Toe repository on GitHub 
 - Click the "Code" button to the right of the screen, click HTTPs and copy the link there
 - Open a GitBash terminal and navigate to the directory where you want to locate the clone
 - On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
  
 ## Credits 
 - javaScript : [code institute](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
-- Beautiful Tic Tac Toe game using HTML, CSS and JavaScript - Code Hawk : [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
-- A Complete Overview of JavaScript Events - All You Need To Know : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
-- A game of TicTacToe written in JavaScript  : [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
+- Code Hawk : [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
+- A Complete Overview of JavaScript Events : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
+- Game: [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
 
 ### Content 
-- Content on the game was based on watching different youtube videos  : [Tic tac toe](https://www.youtube.com/)
-- All other content was written by the developer
+- Content on the game was based on watching different youtube videos  : [you tube](https://www.youtube.com/)
+- All other content was written by the developer.
 
 ### Code
-- Code how to create a slider in CSS and JavaScript : [youtube videos on how to build tic tac toe](https://youtu.be/n6gzxTsbHLc?si=53Mkqg3-Gb_kX1qF)
-- Code how to create tic tac toe videos from the ones I credited above : [youtube videos on how to build tic tac toe](https://www.youtube.com/)
-- Code how to call functions : [code institute course work](https://codeinstitute.net)
+- How to create a slider in CSS and JavaScript : [youtube videos on how to build tic tac toe](https://youtu.be/n6gzxTsbHLc?si=53Mkqg3-Gb_kX1qF)
+- How to create tic tac toe videos from the ones I credited above : [youtube videos on how to build tic tac toe](https://www.youtube.com/)
+- How to call functions : [code institute](https://codeinstitute.net)
 - How to hide and show container element when i click the button :  [container hide and show](https://stackoverflow.com/questions/22242686/container-hide-and-show)
-- Code on how to munipulate some function to do specific tasks : [W3Schools The inner Element Object](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_textcontent_innerhtml_innertext)
+- How to munipulate some function to do specific tasks : [W3Schools The inner Element Object](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_textcontent_innerhtml_innertext)
 
 ### Media 
 
@@ -190,6 +190,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - The favicon was created from [favicon](https://www.favicon.cc/)
 - The logo was created using [logomaker](https://www.logomaker.net/)
 - The logo image was resize using [iloveimg](https://www.iloveimg.com/)
+- The logo background was removed using [remove image background](https://www.remove.bg/)
 
 ### Acknowledgments
 
