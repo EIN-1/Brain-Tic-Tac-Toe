@@ -156,7 +156,7 @@ header {
     width: 75%;
     max-width: 320px;
     opacity: 1;
-    pointer-events: auto;
+    cursor: pointer;
     margin: 0 auto;
     position: relative;
     transform: translate(-50%, -50%) scale(1);
@@ -164,7 +164,6 @@ header {
 
 .turns-Container {
     width: 150px;
-    max-width 225px
     height: 60px;
     margin: auto;
     display: grid;
@@ -183,8 +182,7 @@ header {
 .turns-Container .turn {
     border: 2px solid blueviolet;
     font-size: 20px;
-    font-weight: 150px;
-    font-size: 200;
+    font-weight: lighter;
 }
 
 .turns-Container .turn:nth-child(even) {

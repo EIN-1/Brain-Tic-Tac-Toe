@@ -77,9 +77,9 @@ The users of this game improves their virtue and focus skill in due time, becaus
 -   ### Colour Scheme
 - black
 - violetblue
-- white smoke
+- whitesmoke
 - green
-![design](documentation/gameImages/Footer-img.png)
+![design](documentation/gameImages/design-img.png)
 
 ## Technologies Used
 
