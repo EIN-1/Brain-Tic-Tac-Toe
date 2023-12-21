@@ -12,7 +12,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 * [Features](#features)
 * [Design](#design)
 * [Technologies Used](#technologies-used)
-* [esting](#testing)
+* [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
@@ -96,12 +96,13 @@ The users of this game improves their virtue and focus skill in due time, becaus
 -   [favicon:](https://www.favicon.cc/) was used to add icon in the browser.
 -   [logomaker:](https://www.logomaker.net/) was used to have a logo for aesthetic and UX purposes.
 -   [remove image background](https://www.remove.bg/) was used to remove the logo background.
+-   [mockup generator](https://ui.dev/amiresponsive?url=%20https://ein-1.github.io/Brain-Tic-Tac-Toe/) was used to test different screen responsive devices.
 
 
 ## Testing
 
 - Lighthouse testing
-    - ![lighthouse results](documentation/validation/lighthouse testing.png)
+    - ![results](documentation/validation/lighthouse testing.png)
     - performance
     - ![Performance diagnodtics](documentation/validation/performanceDiagnostics.png)
 
@@ -121,7 +122,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
     - result for styles.css 
       ![CSS results](documentation/validation/cssValidator.png)
       ![CSS warning](documentation/validation/css-warning.png)
-      The warnings are due to 1) import of the Google fonts.
+      There is only 1 warning and it is due to import of the Google fonts.
 
 - [JavaScript Validator](https://jshint.com/)
   
@@ -134,22 +135,10 @@ The users of this game improves their virtue and focus skill in due time, becaus
 ### Browser Compatibility
 
     - Testing has been carried out on the following browsers :
-    - Chrome Version 90.0.4430.212 (Official Build) (64-bit)
-    - Firefox Version 88.0.1 (64-bit)
-    - Edge Version 90.0.818.62 (Official build) (64-bit)
-    - Safari on macOS Catalina (Safari  Version 14.0.3)
-    
-### Test Cases and Results
-
-- The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click to open image):
-
-  ![Test Results](documentation/supp-images/test-cases.png)
-
-### Known bugs
-
-- My mentor reported an issue with the "Send Message" button when viewed on an iphone during a review meeting.  Neither of us has since been able to re-create this using the browser dev tools but I am adding an image of the issue here for completeness :
-
-  ![Bug01](documentation/supp-images/bug01-send-message-issue.png)
+    - Chrome (64-bit)
+    - Firefox (64-bit)
+    - Edge (64-bit)
+  
 
 ## Deployment
 
@@ -174,11 +163,16 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - Code Hawk : [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
 - A Complete Overview of JavaScript Events : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
 - Game: [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
-- [matching colors](https://dequeuniversity.com/rules/axe/4.8/color-contrast)
-- [JShint version issue](https://youtu.be/QDzeU1FUZRk?si=hFpzXqylDbD5_o7K)
+- Color contrast : [matching colors](https://dequeuniversity.com/rules/axe/4.8/color-contrast)
+- The jshint verson warnings : [JShint version issue](https://youtu.be/QDzeU1FUZRk?si=hFpzXqylDbD5_o7K)
+- Jshint warning version issues : [stackoverflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
+- amiresponsive : [mockup generator](https://ui.dev/amiresponsive?url=%20https://ein-1.github.io/Brain-Tic-Tac-Toe/)
 
 ### Content 
-- Content on the game was based on watching different youtube videos  : [you tube](https://www.youtube.com/)
+- Content on the game was based on:
+- [you tube](https://www.youtube.com/)
+- [stackoverflow](https://stackoverflow.com/)
+- [code institute](https://learn.codeinstitute.net)
 - All other content was written by the developer.
 
 ### Code
@@ -201,7 +195,9 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - I want to thank my cohort facilitator madam Kay Welfare who always check up on me when am lost in my course and am grateful for giving me good advice and feedback on how to plan and execute this project and who provided me with lots of pointers on resources like where to look when looks for colors, resizing images and so on that helped me on this project.
 
 - Thanks to code institute and staff for always providing me with important pointers and resourses to enable me wided my coding scope and knowlege.
-- This readyME file was inspired by : [code institute Rock,Paper,scissor](https://codeinstitute.net)
-- This game was created during my project trainning, and it was a great experience.
+- This readyME file was inspired by : [code institute - Rock,Paper,scissor](https://codeinstitute.net)
+- This game was created as a project and it was a great experience making this game work
 
-by Elsie Nagawa 21.12.23
+# Developed by 
+- Elsie Nagawa 
+  21.12.23
