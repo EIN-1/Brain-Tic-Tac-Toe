@@ -75,11 +75,8 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - the width of the elements is in percentage, so I didn't need to use media query in CSS for it to be responsive 
 
 -   ### Colour Scheme
-- black
-- violetblue
-- whitesmoke
-- green
-![design](documentation/gameImages/design-img.png)
+  
+![design](documentation/gameImages/color-design.jpg)
 
 ## Technologies Used
 
@@ -103,39 +100,37 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 ## Testing
 
+- Lighthouse testing
+    - ![lighthouse results](documentation/validation/lighthouse testing.png)
+    - performance
+    - ![Performance diagnodtics](documentation/validation/performanceDiagnostics.png)
+
 ### Validator Testing
 
 - [HTML Validator](https://validator.w3.org/)
 
     - result for index.html
-      ![HTML results index](documentation/validation-results/html-validation-result-1.png)
+      ![HTML results](documentation/validation/html-Validator.png)
     - result for menu.html
-      ![HTML results menu](documentation/validation-results/html-validation-result-2.png)
+      ![HTML warning](documentation/validation/html-warning.png)
     - result for contact.html
       ![HTML results contact](documentation/validation-results/html-validation-result-3.png)
-
-    - Full validation results are available on github here :
-
-        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-index.pdf" target="_blank">HTML Results - Home Page</a>
-
-        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-menu.pdf" target="_blank">HTML Results - Menu Page</a>
-
-        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-contact.pdf" target="_blank">HTML Results - Contact Page</a>
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
     - result for styles.css 
-      ![CSS results 1](documentation/validation-results/css-validation-result-1.png)
-      ![CSS results 2](documentation/validation-results/css-validation-result-2.png)
-
-      The warnings are due to 1) import of the Google fonts and 2) a webkit extension for Safari support of the flip-card effect used on the home page.
-
-    - Full validation results are available on github here :
-
-        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/css-validation-results.pdf" target="_blank">CSS Results - styles.css</a>
+      ![CSS results](documentation/validation/cssValidator.png)
+      ![CSS warning](documentation/validation/css-warning.png)
+      The warnings are due to 1) import of the Google fonts.
 
 - [JavaScript Validator](https://jshint.com/)
-- 
+  
+    - result from JavaScript
+      ![JavaScript results](documentation/validation/warning validation in jshint.png)
+      ![JavaScript warning](documentation/validation/warning-jshint-1.png)
+      ![JavaScript warning improved](documentation/validation/warning-jshint-2.png)
+
+  
 ### Browser Compatibility
 
     - Testing has been carried out on the following browsers :
@@ -165,7 +160,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
 - Any changes pushed to the master branch will take effect on the live project
 
-  The live link can be found here - [Tic Tac Toe](https://elainebroche-dev.github.io/ms1-thrive/index.html) 
+  The live link can be found here - [Brain Tic Tac Toe]( https://ein-1.github.io/Brain-Tic-Tac-Toe/) 
 
 ### How to clone the repository
 
@@ -180,6 +175,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - A Complete Overview of JavaScript Events : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
 - Game: [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
 - [matching colors](https://dequeuniversity.com/rules/axe/4.8/color-contrast)
+- [JShint version issue](https://youtu.be/QDzeU1FUZRk?si=hFpzXqylDbD5_o7K)
 
 ### Content 
 - Content on the game was based on watching different youtube videos  : [you tube](https://www.youtube.com/)
@@ -206,3 +202,6 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 - Thanks to code institute and staff for always providing me with important pointers and resourses to enable me wided my coding scope and knowlege.
 - This readyME file was inspired by : [code institute Rock,Paper,scissor](https://codeinstitute.net)
+- This game was created during my project trainning, and it was a great experience.
+
+by Elsie Nagawa 21.12.23
