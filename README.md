@@ -101,10 +101,9 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 ## Testing
 
-- Lighthouse testing
-    - ![results](documentation/validation/lighthouse testing.png)
-    - performance
-    - ![Performance diagnodtics](documentation/validation/performanceDiagnostics.png)
+- Lighthouse testing: ![results](documentation/validation/lighthouseTesting.png)
+  
+- performance: ![Performance diagnodtics](documentation/validation/performanceDiagnostics.png)
 
 ### Validator Testing
 
@@ -198,6 +197,6 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - This readyME file was inspired by : [code institute - Rock,Paper,scissor](https://codeinstitute.net)
 - This game was created as a project and it was a great experience making this game work
 
-# Developed by 
+### Developed by 
 - Elsie Nagawa 
   21.12.23
