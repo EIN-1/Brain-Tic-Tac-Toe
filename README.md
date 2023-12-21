@@ -120,10 +120,10 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-    - result for styles.css 
+    - CSS results
       ![CSS results](documentation/validation/cssValidator.png)
       ![CSS warning](documentation/validation/css-warning.png)
-      There is only 1 warning and it is due to import of the Google fonts.
+    - There is only 1 warning and it is due to import of the Google fonts.
 
 - [JavaScript Validator](https://jshint.com/)
   
