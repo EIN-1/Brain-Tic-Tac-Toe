@@ -21,7 +21,7 @@ html {
 body {
     margin: 0;
     font-weight: 350;
-    color: blueviolet;
+    color: #581296 ;
     background-color: black;
     text-align: center;
 
@@ -105,7 +105,7 @@ header {
 .option-box,
 .won-text-box {
     background: rgb(64, 237, 159);
-    color: blueviolet;
+    color: #581296;
     text-align: center;
 }
 
@@ -118,23 +118,23 @@ header {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    background: blueviolet;
+    background: #581296;
     color: rgb(64, 237, 159);
     transition: all 0.3s ease;
 }
 
 .option-box button:active,
 .won-text-box button:active {
-    color: blueviolet;
+    color: #581296 ;
     background: white;
 }
 
-.btn-playerX {
+.play-X {
     float: left;
     margin-bottom: 8px;
 }
 
-.btn-playerO {
+.play-O {
     float: right;
     margin-bottom: 8px;
 }
@@ -152,13 +152,12 @@ header {
 }
 
 #game-container.show {
-    position: absolute;
     width: 75%;
     max-width: 320px;
     opacity: 1;
     cursor: pointer;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -180,7 +179,7 @@ header {
 }
 
 .turns-Container .turn {
-    border: 2px solid blueviolet;
+    border: 2px solid #581296 ;
     font-size: 20px;
     font-weight: lighter;
 }
@@ -235,7 +234,7 @@ header {
 }
 
 .cellBox:hover {
-    background-color: blueviolet;
+    background-color: #581296;
 }
 
 ul{
@@ -252,6 +251,7 @@ footer {
     font-size: 14px;
     text-align: center;
     background-color: whitesmoke;
+    color: black;
 }
 
 .hide {

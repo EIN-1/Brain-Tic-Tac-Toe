@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get necessary elements
     const optionBox = document.querySelector('.option-box');
-
-    const playerXBtn = document.querySelector('.btn-playerX');
-    const playerOBtn = document.querySelector('.btn-playerO');
+    const playerXBtn = document.querySelector('.play-X');
+    const playerOBtn = document.querySelector('.play-O');
 
     const gameContainer = document.getElementById('game-container');
     const boxContainer = document.getElementById('boxContainer');
@@ -12,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const replayBtn = document.querySelector('.btn-replay');
 
 
-    let userSelectedPlayer = ""
+    let userSelectedPlayer = "";
 
     let currentPlayer = ""; // Default starting player
     let gameEnded = false;
@@ -26,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for player choice
     playerXBtn.addEventListener('click', () => {
-        startGame("X")
+        startGame("X"); 
     });
 
     playerOBtn.addEventListener('click', () => {
-        startGame("O")
+        startGame("O");
     });
 
     // Event listener for cell clicks
@@ -51,17 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function startGame(player) {
-        optionBox.classList.add("hide")
-        gameContainer.classList.remove("hide")
-        currentPlayer = player
-        userSelectedPlayer = player
-        updateSliderPosition()
+        optionBox.classList.add("hide");
+      gameContainer.classList.remove("hide");
+        currentPlayer = player;
+        userSelectedPlayer = player;
+        updateSliderPosition();
     }
 
 
     function switchPlayer() {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-        console.log(currentPlayer)
+        console.log(currentPlayer);
         updateTurns();
     }
 
@@ -74,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
         turns.forEach((turn) => {
             turn.classList.toggle('align', turn.textContent === currentPlayer);
         });
-        updateSliderPosition()
+        updateSliderPosition();
         if (currentPlayer != userSelectedPlayer) {
-            makeComputerMove()
+            makeComputerMove();
         }
     }
 
@@ -112,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayWinner(winner) {
         wonTextBox.querySelector('.won-text').textContent = winner === 'Tie' ? "It's a Tie!" : `Player ${winner} won!`;
         wonTextBox.classList.remove('hide');
-        gameEnded =true
+        gameEnded =true;
     }
 
     function resetGame() {
@@ -123,10 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         gameEnded = false;
         wonTextBox.querySelector('.won-text').textContent = "";
-        optionBox.classList.remove("hide")
-        gameContainer.classList.add("hide")
-        currentPlayer = ""
-        userSelectedPlayer = ""
+        optionBox.classList.remove("hide");
+        gameContainer.classList.add("hide");
+        currentPlayer = "";
+        userSelectedPlayer = "";
     }
 
     function makeComputerMove() {
@@ -152,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Simulate the computer's click after a short delay
                 setTimeout(() => {
                     computerCell.click();
-                }, 500); // Adjust the delay as needed
+                }, 230); // Adjust the delay as needed
             }
         }
     }
@@ -197,6 +196,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Simulate the computer's click after a short delay
         setTimeout(() => {
             cell.click();
-        }, 500); // Adjust the delay as needed
+        }, 230); // Adjust the delay as needed
     }
-})
+});

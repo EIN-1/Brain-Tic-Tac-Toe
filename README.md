@@ -134,6 +134,8 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
         - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/css-validation-results.pdf" target="_blank">CSS Results - styles.css</a>
 
+- [JavaScript Validator](https://jshint.com/)
+- 
 ### Browser Compatibility
 
     - Testing has been carried out on the following browsers :
@@ -177,6 +179,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - Code Hawk : [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
 - A Complete Overview of JavaScript Events : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
 - Game: [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
+- [matching colors](https://dequeuniversity.com/rules/axe/4.8/color-contrast)
 
 ### Content 
 - Content on the game was based on watching different youtube videos  : [you tube](https://www.youtube.com/)
