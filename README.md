@@ -109,12 +109,14 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 - [HTML Validator](https://validator.w3.org/)
 
-    - result for index.html
-      ![HTML results](documentation/validation/html-Validator.png)
-    - result for menu.html
+    - HTML Url checker
+      ![HTML checker](documentation/validation/html-checker.png)
+    - HTML input validator
+      ![HTML results](documentation/validation/htmlValidator.png)
+    - HTML warning
       ![HTML warning](documentation/validation/html-warning.png)
-    - result for contact.html
-      ![HTML results contact](documentation/validation-results/html-validation-result-3.png)
+    - The warning is caused by not have a headering in h2 but i wanted it blank.
+
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
@@ -125,10 +127,11 @@ The users of this game improves their virtue and focus skill in due time, becaus
 
 - [JavaScript Validator](https://jshint.com/)
   
-    - result from JavaScript
-      ![JavaScript results](documentation/validation/warning validation in jshint.png)
+    - JavaScript results
+     
       ![JavaScript warning](documentation/validation/warning-jshint-1.png)
       ![JavaScript warning improved](documentation/validation/warning-jshint-2.png)
+    - The warning was caused by jshint version 6 issues [jshint throwing warning](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) but was I put in jshint option it cleared as shown above.
 
   
 ### Browser Compatibility
