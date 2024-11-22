@@ -58,14 +58,10 @@ header {
     max-width: 330px;
     font-size: 17px;
     text-align: center;
-
 }
+
 
 .option-box {
-    /* display: none; */
-}
-
-.option-box  {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -84,6 +80,30 @@ header {
 .option-box.hide {
     opacity: 0;
     pointer-events: none;
+}
+
+.rules-box {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #E1E0E0;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: none; /* Hidden initially */
+}
+
+.rules-box.show {
+    display: block; /* Show when needed */
+}
+
+.btn-start {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
 }
 
 .won-text-box {
