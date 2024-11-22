@@ -22,7 +22,7 @@ body {
     margin: 0;
     font-weight: 350;
     color: #581296 ;
-    background-color: black;
+    background-color: #E1E0E0;
     text-align: center;
 
 }
@@ -58,7 +58,7 @@ header {
     max-width: 330px;
     font-size: 17px;
     text-align: center;
-    color: white;
+
 }
 
 .option-box {
@@ -104,9 +104,9 @@ header {
 
 .option-box,
 .won-text-box {
-    background: rgb(64, 237, 159);
-    color: #581296;
+    background: #40ED9F;
     text-align: center;
+    border:solid #581296;
 }
 
 
@@ -119,15 +119,11 @@ header {
     cursor: pointer;
     border-radius: 5px;
     background: #581296;
-    color: rgb(64, 237, 159);
+    color: #40ED9F;
     transition: all 0.3s ease;
 }
 
-.option-box button:active,
-.won-text-box button:active {
-    color: #581296 ;
-    background: white;
-}
+
 
 .play-X {
     float: left;
@@ -175,7 +171,7 @@ header {
     margin: 0;
     grid-column-start: 1;
     grid-column-end: 3;
-    background: whitesmoke;
+
 }
 
 .turns-Container .turn {
@@ -195,7 +191,7 @@ header {
     width: 50%;
     margin: 0 auto;
     height: 50%;
-    background-color: rgb(64, 237, 159);
+    background-color: #40ED9F;
     z-index: -1;
 }
 .details{
@@ -229,7 +225,7 @@ header {
     max-width: 330px;
     border: 2px solid;
     margin: 0px auto;
-    background-color: rgb(64, 237, 159);
+    background-color: #40ED9F;
     position: relative;
 }
 
