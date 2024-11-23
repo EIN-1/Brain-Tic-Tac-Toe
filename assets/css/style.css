@@ -73,7 +73,7 @@ header {
     line-height: 1.5;
     text-align: center;
     border-radius: 5px;
-    z-index: 1000; /* Ensure it's on top of other content */
+   
 }
 
 /* .option-box specific styles when visible */
@@ -90,6 +90,7 @@ header {
 
 /* Show when needed */
 .rules-box.show {
+    z-index: 1; /* Ensure it's on top of other content */
     display: block; 
 }
 
