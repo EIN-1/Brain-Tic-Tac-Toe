@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPlayer = ""; // Default starting player
     let gameState = Array(9).fill("");
 
+    //start game button
+    startGamebtn.addEventListener('click', () => {
+        rulesBox.style.display = 'none';//Hide the game rules
+        optionBox.style.display = 'block';// show the choice box
+    });
+
 
 
 
