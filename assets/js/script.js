@@ -3,16 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const cells = document.querySelectorAll('.cellBox')
     const replayBtn = document.querySelector('.replay-btn')
     const wonTextBox = document.querySelector('.won-text')
-    const gameContainer = document.getElementById('.game-container')
-    const gameRules = document.getElementById('.game-rules')
-    const startGamebtn = document.getElementById('.start-game-btn')
+    const gameContainer = document.getElementById('game-container')
+    const rulesBox = document.getElementById('game-rules')
+    const startGameBtn = document.getElementById('start-game-btn')
     const optionBox = document.querySelector('.option-box')
 
     let currentPlayer = ""; // Tracks which player's turn it is
     let gameState = Array(9).fill(""); // It starts with 9 empty strings
 
+
     //when start game button is clicked, it hinds it and shows the option box 
-    startGamebtn.addEventListener('click', () => {
+    startGameBtn.addEventListener('click', () => {
         rulesBox.style.display = 'none';//Hide the game rules
         optionBox.style.display = 'block';// show the choice box
     });
@@ -20,7 +21,38 @@ document.addEventListener("DOMContentLoaded", function () {
     //setting up button listeners on players when clicked to starts the game.
     document.querySelector('.play-X').addEventListener('click', () => startGame('X'));
     document.querySelector('.play-O').addEventListener('click', () => startGame('O'));
+
+    function startGame(player){
+        currentPlayer = player;
+        optionBox.style.display = 'none';// show the choice box
+        gameContainer.style.display = 'block'; // show the gameContainer
+        resetGame(); // rest game state
+    }
+
+        // Replay button listener
+    replayBtn.addEventListener('click', resetGame);
+
+    // Game cell listeners
+    cells.forEach((cell, index) => {
+        cell.addEventListener('click', () => cellClicked(index));
+    });
+
+  
     
+    function cellClicked(index) {
+        if (gameState[index] === "" && wonTextBox.textContent === "") {
+            gameState[index] = currentPlayer;
+            cells[index].textContent = currentPlayer;
+            if (checkWin(currentPlayer)) {
+                wonTextBox.textContent = `${currentPlayer} Wins!`;
+            } else if (gameState.every(cell => cell !== "")) {
+                wonTextBox.textContent = "It's a Draw!";
+            } else {
+                currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+            }
+        }
+    }
+
 });
 
 

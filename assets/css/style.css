@@ -73,7 +73,7 @@ header {
     line-height: 1.5;
     text-align: center;
     border-radius: 5px;
-   
+    z-index: 1;
 }
 
 /* .option-box specific styles when visible */
@@ -90,36 +90,28 @@ header {
 
 /* Show when needed */
 .rules-box.show {
-    z-index: 1; /* Ensure it's on top of other content */
+    z-index: 3; /* Ensure it's on top of other content */
     display: block; 
 }
 
-.btn-start {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-}
+
 
 /* Win Box */
 .won-text-box {
     position: relative;
-    width: 100%;
-    padding: 0.1px;
-    margin: 2px auto;
+    width: 99%;
+    margin: 0 auto;
     font-size: 14px;
     border-radius: 3px;
 }
 
-.won-text-box button {
-    margin-bottom: 5px;
-    
-}
 
 .option-box,
 .won-text-box {
     background: #40ED9F;
     text-align: center;
     border:solid #581296;
+    
 }
 
 
@@ -128,11 +120,12 @@ header {
 .won-text-box button {
     position: relative;
     font-weight: bold;
-    padding: 5px;
+    padding: 7px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
     background: #581296;
     color: #40ED9F;
+    margin-bottom: 7px;
     transition: all 0.3s ease;
 }
 
@@ -143,12 +136,12 @@ header {
 
 .play-X {
     float: left;
-    margin-bottom: 8px;
+
 }
 
 .play-O {
     float: right;
-    margin-bottom: 8px;
+
 }
 
 /* Game Container */
@@ -162,7 +155,7 @@ header {
     position: absolute;
     transform: translate(-50%, -50%);
     background-color: #E1E0E0;
-    border: 2px solid #581296;
+    border: 0;
     display: none;
 }
 
@@ -175,33 +168,33 @@ header {
 /* Game Details */
 .details{
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
 }
 
-.turns-Container {
-    width: 150px;
+.turns-container {
+    width: 160px;
     height: 60px;
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.turns-Container h3 {
-    margin: 0;
+.turns-container h3 {
+    margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 3;
 
 }
 
-.turns-Container .turn {
-    border: 2px solid #581296 ;
-    font-size: 20px;
+.turns-container .turn {
+    border: 1.5px solid #581296 ;
+    font-size: 23px;
     font-weight: 300;
 }
 
-.turns-Container .turn:nth-child(even) {
+.turns-container .turn:nth-child(even) {
     border-right: none;
 }
 
@@ -209,16 +202,16 @@ header {
     position: absolute;
     left:50%;
     top: 50%;
-    width: 50%;
+    width: 26.7%;
     margin: 0 auto;
-    height: 50%;
+    height: 51%;
     background-color: #40ED9F;
     z-index: -1;
 }
 
 .playing-area{
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,16 +221,14 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
     height: auto;
     width: 100%;
-    border: 2px solid;
+    border: 1px solid;
     margin: 0 auto;
-    padding: 10px;
     aspect-ratio: 1; /* Control for square grid */
 }
 .cellBox {
-    width: 100%;
+    width: 96%;
     display: flex;
     font-size: 2rem;
     line-height: 75px;
