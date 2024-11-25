@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
         wonTextBox.classList.remove('hide');
     }
 
+    // rest game listener once replay button is clicked
+     replayBtn.addEventListener('click', resetGame);
+
     // reset game to replay with the same user
     function resetGame() {
         gameState.fill(""); // Reset game state to empty
@@ -93,6 +96,19 @@ document.addEventListener("DOMContentLoaded", function () {
         wonTextBox.classList.add('hide'); // Hide any displayed messages
         gameEnded = false;        
     }
-    // rest game listener once replay button is clicked
-    replayBtn.addEventListener('click', resetGame);
+
+    // Exit button listener 
+    exitBtn.addEventListener('click', endGame);
+
+    //exit game function, once exit button is clicked it takes you back to rules.
+    function endGame() {
+        gameContainer.style.display = 'none';
+        optionBox.style.display ='none';
+        wonTextBox.textContent = ""; // Clear any win message
+        wonTextBox.classList.add('hide'); // Hide any displayed messages
+        rulesBox.style.display = 'block'; //show rules box
+    }
+   
+
+
 });
