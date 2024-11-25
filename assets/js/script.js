@@ -63,14 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
+    // switch player between x or o.
     function switchPlayer() {
         currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
         if (currentPlayer === 'O') {
             computerMove();
         }
     }
-
+    // computer move with time delay for better ux.
     function computerMove {
         let emptycells = gameState.map((cell, index) => cell === "" ? index : null).filter(index => index !== null);
 
@@ -79,5 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => cellClicked(randomIndex), 300); // Adding a delay for better UX
         }
     }
+    // display winnter result message through won text box.
+    function displayResult(message) {
+        wonTextBox.textContent = message;
+        wonTextBox.classList.remove('hide');
+    }
+
 
 });
