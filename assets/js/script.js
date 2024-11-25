@@ -79,11 +79,20 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => cellClicked(randomIndex), 300); // Adding a delay for better UX
         }
     }
-    // display winnter result message through won text box.
+    // display function winnter result message through won text box.
     function displayResult(message) {
         wonTextBox.textContent = message;
         wonTextBox.classList.remove('hide');
     }
 
-
+    // reset game to replay with the same user
+    function resetGame() {
+        gameState.fill(""); // Reset game state to empty
+        cells.forEach(cell => cell.textContent = ""); // Clear the cell displays
+        wonTextBox.textContent = ""; // Clear any win message
+        wonTextBox.classList.add('hide'); // Hide any displayed messages
+        gameEnded = false;        
+    }
+    // rest game listener once replay button is clicked
+    replayBtn.addEventListener('click', resetGame);
 });
