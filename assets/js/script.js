@@ -64,4 +64,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function switchPlayer() {
+        currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+        if (currentPlayer === 'O') {
+            computerMove();
+        }
+    }
+
+    function computerMove {
+        let emptycells = gameState.map((cell, index) => cell === "" ? index : null).filter(index => index !== null);
+
+        if (emptyCells.length > 0) {
+            const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+            setTimeout(() => cellClicked(randomIndex), 300); // Adding a delay for better UX
+        }
+    }
+
 });
