@@ -187,13 +187,15 @@ header {
     display: flex;
 }
 
+
 .turns-container {
+    position: relative; /* Set the position to relative for lining up the slider */
     width: 160px;
     height: 60px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two columns for X and O */
+    grid-template-rows: 1fr; /* One row */
 }
 
 .turns-container h3 {
@@ -215,13 +217,12 @@ header {
 
 /* slider with a transition for smooth movement */
 .slider {
-    position: absolute;
+    position: absolute; /* Set to absolute for correct positioning */
     transition: left 0.3s ease, right 0.3s ease; 
-    left:50%;
     top: 50%;
-    width: 26.7%;
+    width: 50%;
     margin: 0 auto;
-    height: 51%;
+    height: 100%;
     background-color: #40ED9F;
     z-index: -1;
 }
