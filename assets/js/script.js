@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     playerXBtn.addEventListener('click', () => startGame('X'));
     playerOBtn.addEventListener('click', () => startGame('O'));
 
-
+    // start game function that lets you choose a player and you start the game.
     function startGame(player){
         currentPlayer = player;
         optionBox.style.display = 'none';// show the choice box
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // cellclicked function that checks the game state
     function cellClicked(index) {
         if (gameState[index] === "" && !gameEnded) {
             gameState[index] = currentPlayer;
@@ -71,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     // computer move with time delay for better ux.
-    function computerMove {
-        let emptycells = gameState.map((cell, index) => cell === "" ? index : null).filter(index => index !== null);
+    function computerMove() {
+        let emptyCells = gameState.map((cell, index) => cell === "" ? index : null).filter(index => index !== null);
 
         if (emptyCells.length > 0) {
             const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
@@ -107,6 +108,13 @@ document.addEventListener("DOMContentLoaded", function () {
         wonTextBox.textContent = ""; // Clear any win message
         wonTextBox.classList.add('hide'); // Hide any displayed messages
         rulesBox.style.display = 'block'; //show rules box
+    }
+
+    // check winner function which returns the game state of the win cobination.
+    function checkWin(player) {
+        return winCombinations.some(condition =>
+            condition.every(index => gameState[index] === player)
+        );
     }
    
 
