@@ -243,7 +243,7 @@ header {
     width: 100%;
     border: 1px solid;
     margin: 0 auto;
-    aspect-ratio: 1; /* Control for square grid */
+    aspect-ratio: 1; /* this is for square grid */
 }
 .cellBox {
     width: 96%;
@@ -257,7 +257,7 @@ header {
     cursor: pointer;
     border: 2px solid #581296;
     background-color: #40ED9F;
-    aspect-ratio: 1; /* Ensure each cell remains square */
+    aspect-ratio: 1; /* to make sure each cell remains square */
     transition: background-color 0.3s;
 }
 
@@ -266,6 +266,13 @@ header {
     color: #40ED9F;
     background-color: #581296;
 }
+
+/* changes the background color for the winning and draw cells */
+.win-cell, .draw-cell {
+    background-color: red; 
+}
+
+
 
 /* design my list to have a bullet disc */
 ul{
@@ -282,7 +289,7 @@ ul{
     display: block;
 }
 
-/* Media Queries for Responsiveness */
+/* Media queries  */
 @media (min-width: 768px) {
     #game-container {
         max-width: 50%;

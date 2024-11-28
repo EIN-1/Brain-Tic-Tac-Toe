@@ -13,13 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const turns = document.querySelectorAll('.turn');
     const slider = document.querySelectorAll('.slider');
 
-
-    let currentPlayer = ""; // Tracks which player's turn it is
+    let selectedPlayer = ""; // tracks which player the user chose.
+    let currentPlayer = ""; // tracks which player's turn it is.
+    let aComputer = ""; // checks if the current player is a computer
     let gameEnded = false;
     let gameState = Array(9).fill(""); // It starts with 9 empty strings
 
    // Define the winning combinations
-    const winCombinations = [
+    const winningCombinations = [
          [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
          [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
          [0, 4, 8], [2, 4, 6]             // Diagonals
@@ -29,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //when start game button is clicked, it hinds it and shows the option box 
     startGameBtn.addEventListener('click', () => {
-        rulesBox.style.display = 'none';//Hide the game rules
-        optionBox.style.display = 'block';// show the choice box
+        rulesBox.style.display = 'none'; //Hide the game rules
+        optionBox.style.display = 'block'; // show the choice box
     });
 
     // Player choice listeners
@@ -39,11 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // start game function that lets you choose a player and you start the game.
     function startGame(player){
-        currentPlayer = player;
-        optionBox.style.display = 'none';// show the choice box
+        selectedPlayer = player; // the player's choice to make sure X and O can be selected by user.
+        currentPlayer = selectedPlayer; // set the current player to the user's choice
+        aComputer =  (selectedPlayer === 'X') ? 'O' : 'X';
+
+        optionBox.style.display = 'none'; // hide the OptionBox once you have choosen a player. 
         gameContainer.style.display = 'block'; // show the gameContainer
-        resetGame(); // rest game state
-        updateTurns(); // Update the slider position
+        resetGame(); // rest game state if replay button is clicked
+        updateTurns(); // update slider position depending on player's turn
     }
 
     // Setting up listeners for game cell clicks
@@ -83,19 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 gameEnded = true;
             } else if (gameState.every(cell => cell !== "")) {
                 displayResult("It's a Draw!");
+                cells.forEach(cell => cell.classList.add('draw-cell')); // color all cells for a draw
+                gameEnded = true; // ended game for draw
             } else {
                 switchPlayer();
             }
-            updateTurns(); // Call updateTurns whenever a cell is clicked
+            updateTurns(); // updateTurns everytime a cell is clicked
         }
     }
+
     // switch player between x or o.
     function switchPlayer() {
-        currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
-        updateTurns(); // Update turns and slider position
-
-        if (currentPlayer === 'O') {
-            computerMove();
+        if (currentPlayer === selectedPlayer) {
+            currentPlayer = (selectedPlayer === 'X') ? 'O' : 'X'; // switch to computer's turn
+            updateTurns(); // turns update to change slider position
+            computerMove(); // here computer moves immediately
+        } else {
+            currentPlayer = selectedPlayer; // switch back to player's choice
+            updateTurns(); // update turns for the player's choice
         }
     }
     // computer move with time delay for better ux.
@@ -104,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (emptyCells.length > 0) {
             const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
-            setTimeout(() => cellClicked(randomIndex), 400); // Adding a delay for better UX
+            setTimeout(() => cellClicked(randomIndex), 400); // added a delay for better UX
         }
     }
 
@@ -112,6 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayResult(message) {
         wonTextBox.textContent = message;
         wonTextBox.classList.remove('hide');
+
+        // Win cell styles
+        cells.forEach(cell => cell.classList.remove('win-cell'));
+
+        // If it's a draw highlight all cells
+        if(message.includes("Draw")) {
+            cells.forEach(cell => cell.classList.add('draw-cell')); // color all cells on draw
+        }
     }
 
     // rest game listener once replay button is clicked
@@ -129,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Exit button listener 
     exitBtn.addEventListener('click', endGame);
 
-    //exit game function, once exit button is clicked it takes you back to rules.
+    //Exit game function, once exit button is clicked it takes you back to rules.
     function endGame() {
         gameContainer.style.display = 'none';
         optionBox.style.display ='none';
@@ -138,12 +155,29 @@ document.addEventListener("DOMContentLoaded", function () {
         rulesBox.style.display = 'block'; //show rules box
     }
 
-    // check winner function which returns the game state of the win cobination.
+    // Check winner function which returns the game state of the win cobination.
     function checkWin(player) {
-        return winCombinations.some(condition =>
+        const winnerCombinations = winningCombinations.some(condition =>
             condition.every(index => gameState[index] === player)
         );
+    
+        if (winnerCombinations) {
+            colorWinningCells(player);
+        }
+
+        return winnerCombinations; // Return true if a player has won
     }
+
+    // Function to highlight winning cells
+    function colorWinningCells(player) {
+    winningCombinations.forEach(combination => {
+        if (combination.every(index => gameState[index] === player)) {
+            combination.forEach(index => {
+                cells[index].classList.add('win-cell'); // added a win-cell class to color winning cells
+            });
+        }
+    });
+}
 
 
 
