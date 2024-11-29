@@ -74,7 +74,7 @@ The users of this game improves their virtue and focus skill in due time, becaus
 - It is in the middle of the screen
 - the width of the elements is in percentage, so I didn't need to use media query in CSS for it to be responsive 
 
--   ### Colour Scheme
+-   ### Colour Scheme [Color Scheme](https://coolors.co/581296-40ed9f-e1e0e0-000000-816c61)
   
 ![design](documentation/gameImages/color-design.jpg)
 
