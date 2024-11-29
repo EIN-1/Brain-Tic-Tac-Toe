@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */ // this enables ES6 features.
 document.addEventListener("DOMContentLoaded", function () {
     // selecting elements from the DOM.
     const cells = document.querySelectorAll('.cellBox');
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const playerXBtn = document.querySelector('.play-X');
     const playerOBtn = document.querySelector('.play-O');
     const turns = document.querySelectorAll('.turn');
-    const slider = document.querySelectorAll('.slider');
+    
 
     let selectedPlayer = ""; // tracks which player the user chose.
     let currentPlayer = ""; // tracks which player's turn it is.
