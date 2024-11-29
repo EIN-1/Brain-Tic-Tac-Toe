@@ -77,17 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // cellclicked function that checks the game state
+    // clicked cell function that checks the game state
     function cellClicked(index) {
         if (gameState[index] === "" && !gameEnded) {
             gameState[index] = currentPlayer;
             cells[index].textContent = currentPlayer;
+            // checks winning condition
             if (checkWin(currentPlayer)) {
                 displayResult(`${currentPlayer} Wins!`);
                 gameEnded = true;
             } else if (gameState.every(cell => cell !== "")) {
                 displayResult("It's a Draw!");
-                cells.forEach(cell => cell.classList.add('draw-cell')); // color all cells for a draw
+                
                 gameEnded = true; // ended game for draw
             } else {
                 switchPlayer();
@@ -122,25 +123,32 @@ document.addEventListener("DOMContentLoaded", function () {
         wonTextBox.textContent = message;
         wonTextBox.classList.remove('hide');
 
-        // Win cell styles
-        cells.forEach(cell => cell.classList.remove('win-cell'));
+
 
         // If it's a draw highlight all cells
         if(message.includes("Draw")) {
-            cells.forEach(cell => cell.classList.add('draw-cell')); // color all cells on draw
+            cells.forEach(cell => cell.classList.add('draw-cell'));
         }
     }
 
     // rest game listener once replay button is clicked
      replayBtn.addEventListener('click', resetGame);
 
+
     // reset game to replay with the same user
     function resetGame() {
-        gameState.fill(""); // Reset game state to empty
-        cells.forEach(cell => cell.textContent = ""); // Clear the cell displays
-        wonTextBox.textContent = ""; // Clear any win message
-        wonTextBox.classList.add('hide'); // Hide any displayed messages
-        gameEnded = false;        
+        gameState.fill(""); // reset to empty state
+        cells.forEach(cell => cell.textContent = ""); // clear the cells displays
+        wonTextBox.textContent = ""; // clear any message
+        wonTextBox.classList.add('hide'); // Hide displayed messages
+        gameEnded = false;
+        
+        // when replaying clear all highlight color
+        cells.forEach(cell => {
+            cell.textContent = ""; // Clear cell displays
+            cell.classList.remove('win-cell'); // win highlight removed
+            cell.classList.remove('draw-cell'); // if exists draw highlight will be removed
+        });
     }
 
     // Exit button listener 
@@ -153,19 +161,26 @@ document.addEventListener("DOMContentLoaded", function () {
         wonTextBox.textContent = ""; // Clear any win message
         wonTextBox.classList.add('hide'); // Hide any displayed messages
         rulesBox.style.display = 'block'; //show rules box
+        
+        // when exiting clear all highlight color
+        cells.forEach(cell => {
+            cell.textContent = ""; // Clear cell displays
+            cell.classList.remove('win-cell'); // win highlight removed
+            cell.classList.remove('draw-cell'); // if exists draw highlight will be removed
+        });
     }
 
-    // Check winner function which returns the game state of the win cobination.
+    // winner function which returns true if a player has won.
     function checkWin(player) {
         const winnerCombinations = winningCombinations.some(condition =>
             condition.every(index => gameState[index] === player)
         );
-    
+        // the winning cells will change color
         if (winnerCombinations) {
             colorWinningCells(player);
         }
 
-        return winnerCombinations; // Return true if a player has won
+        return winnerCombinations;
     }
 
     // Function to highlight winning cells

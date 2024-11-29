@@ -261,16 +261,15 @@ header {
     transition: background-color 0.3s;
 }
 
-
-.cellBox:hover {
+/* changes the color for the hover, winning and draw cells */
+.cellBox:hover, 
+.win-cell, 
+.draw-cell{
     color: #40ED9F;
     background-color: #581296;
 }
 
-/* changes the background color for the winning and draw cells */
-.win-cell, .draw-cell {
-    background-color: red; 
-}
+
 
 
 
