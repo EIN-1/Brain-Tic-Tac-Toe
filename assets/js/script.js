@@ -85,18 +85,22 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gameState[index] === "" && !gameEnded) {
             gameState[index] = currentPlayer;
             cells[index].textContent = currentPlayer;
+            console.log(`Player ${currentPlayer} clicked cell ${index}.`);
             // checks winning condition
             if (checkWin(currentPlayer)) {
                 displayResult(`${currentPlayer} Wins!`);
                 gameEnded = true;
+                console.log(`${currentPlayer} has won the game.`);
             } else if (gameState.every(cell => cell !== "")) {
                 displayResult("It's a Draw!");
-                
                 gameEnded = true; // ended game for draw
+                console.log("ended game in a draw.");
             } else {
                 switchPlayer();
             }
             updateTurns(); // updateTurns everytime a cell is clicked
+        } else {
+            console.log(`Cell ${index} cell taken.`);
         }
     }
 
