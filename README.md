@@ -195,17 +195,21 @@ Below is the Fixed Code:
 
 ## How This Site Was Deployed
 - In the GitHub repository, navigate to the Settings tab, then choose Pages from the left-hand menu.
-- From the source section drop-down menu, select the Master Branch.
-- Once the master branch has been selected, the page will automatically refresh with a detailed ribbon display to indicate the successful deployment.
-- Any changes pushed to the master branch will take effect on the live project.
+- From the branch section  select drop-down menu, select the Main Branch.
+- Once the main branch has been selected, the page will automatically refresh with a detailed ribbon display to indicate the successful deployment.
+- Any changes pushed to the master/ main branch will take effect on the live project.
 
 The live link can be found here - [Brain Tic Tac Toe](https://ein-1.github.io/Brain-Tic-Tac-Toe/) 
+![deploy](documentation/gameImages/deploy.png)
 
 ## How to Clone the Repository
 1. Go to the [GitHub Repository](https://github.com/EIN-1/Brain-Tic-Tac-Toe).
-2. Click the "Code" button to the right of the screen, select HTTPS, and copy the link.
+2. Click the `Code` button to the right of the screen, select HTTPS, and copy the link.
 3. Open a Git Bash terminal and navigate to the directory where you want to clone the repository.
 4. Type `git clone`, paste the copied URL, and press Enter to start the clone process.
+
+![clone](documentation/gameImages/clone.png)
+
 
 # Credits 
 - JavaScript: [Code Institute](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
