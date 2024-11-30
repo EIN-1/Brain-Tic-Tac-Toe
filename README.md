@@ -28,6 +28,7 @@ You can find a demonstration of the game's responsiveness by clicking [here](htt
 * [Features](#features)
 * [Testing](#testing)
 * [Errors](#errors)
+* [Bugs](#bugs)
 * [Technologies Used](#technologies-used)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -165,6 +166,29 @@ Below are the examples of how the game displays outcomes:
 
 Below is the Fixed Code:
     ![fixed color code](documentation/errors/color-fixed-code.png)
+
+
+## Bugs
+
+- There was a bug that I suspected I couldn't fix, so I added `console.log` statements in my code hoping to catch it. However, after running the debugger, I still couldn't find any issues or errors. Eventually, the problem resolved itself, but it originally manifested as a situation where the computer would not play unless the user made a move first.
+
+- **Known Issues**: 
+  - When the user clicked either 'X' or 'O', the computer did not respond with its turn until the user made a subsequent move. This intermittent problem was challenging to track down. While I couldn't identify the root cause, I am addressing it here in case someone encounters a similar issue in the future.
+
+### Screenshots of the Issues
+- Below are screenshots capturing the error when 'X' is the player:
+  
+![Bug for X-Player](documentation/errors/computer-error.png)
+
+- And here’s the error when 'O' is the player:
+  
+![Bug for O-Player](documentation/errors/computer-error-2.png)
+
+### Development Tool Testing
+- I utilized development tools to test and debug the project but found no issues as a result:
+  
+![Dev Tool Console and Source Testing](documentation/errors/bug-not-found.png)
+
 
 ## Browser Compatibility
 
