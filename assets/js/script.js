@@ -106,12 +106,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // switch player between x or o.
     function switchPlayer() {
+        console.log(`Current player before switch: ${currentPlayer}`);
         if (currentPlayer === selectedPlayer) {
             currentPlayer = (selectedPlayer === 'X') ? 'O' : 'X'; // switch to computer's turn
             updateTurns(); // turns update to change slider position
+            console.log(`Switched to computer's turn: ${currentPlayer}`);
             computerMove(); // here computer moves immediately
         } else {
             currentPlayer = selectedPlayer; // switch back to player's choice
+            console.log(`Switched back to player's turn: ${currentPlayer}`);
             updateTurns(); // update turns for the player's choice
         }
     }
