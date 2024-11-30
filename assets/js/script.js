@@ -134,12 +134,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayResult(message) {
         wonTextBox.textContent = message;
         wonTextBox.classList.remove('hide');
-
+        console.log(`Display message: ${message}`);
 
 
         // If it's a draw highlight all cells
         if(message.includes("Draw")) {
             cells.forEach(cell => cell.classList.add('draw-cell'));
+            console.log("Highlight all cells for draw.");
         }
     }
 
