@@ -121,9 +121,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // computer move with time delay for better ux.
     function computerMove() {
         let emptyCells = gameState.map((cell, index) => cell === "" ? index : null).filter(index => index !== null);
-
+        console.log(`Empty cells for computer move: ${emptyCells}`);
+        
         if (emptyCells.length > 0) {
             const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+            console.log(`Computer chooses cell: ${randomIndex}`);
             setTimeout(() => cellClicked(randomIndex), 400); // added a delay for better UX
         }
     }
