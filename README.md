@@ -1,205 +1,260 @@
-<h1 align="center"> Brain Tic Tac Toe</h1>
+<h1 align="center">
+
+![logo](documentation/gameImages/readMe-logo.png)  Brain Tic Tac Toe</h1>
 
 [View the live project here](https://ein-1.github.io/Brain-Tic-Tac-Toe/)
 
-Brain Tic Tac Toe is a fun game played by two players, the player chooses to be X or O. Some times one can sense the next move by simply looking at the component's impression, by playing with a computer as your component, it's trickier and fun to play with a random move player because you can't see the computer's expressions.
+**Brain Tic Tac Toe** is a fun and engaging game designed for two players. In this game, each player can choose to be **'X'** or **'O'**.
 
-The users of this game improves their virtue and focus skill in due time, because the more you play this game, the better your intellegence improves.
+## How it is played
 
-![Mockup](documentation/gameImages/responsive-img.png)
+- Players take turns marking the spaces in a **3×3 grid**, with the objective of placing three of their marks in a horizontal, vertical, or diagonal row.
+- Playing against the computer adds an additional layer of challenge, as the computer makes random moves, making it essential for the player to think strategically. The unpredictability of the computer's moves means you cannot rely on physical cues or expressions, adding to the fun and challenge.
 
-## Index – Table of Contents
-* [Features](#features)
+## User's benefit
+
+This game helps improve users reasoning and focus skills over time. As players continue playing, they develop better strategic thinking and problem-solving abilities. The more they engage with the game, the sharper their intelligence and focus skill becomes.
+
+## Responsiveness
+
+The game is designed to be responsive on different devices, allowing users to enjoy it on desktops, tablets, and smartphones.
+
+You can find a demonstration of the game's responsiveness by clicking [here](https://ui.dev/amiresponsive?url=https://ein-1.github.io/Brain-Tic-Tac-Toe/).
+
+![Mockup](documentation/gameImages/responsive.png)
+
+# Index – Table of Contents
 * [Design](#design)
-* [Technologies Used](#technologies-used)
+* [Features](#features)
 * [Testing](#testing)
+* [Errors](#errors)
+* [Technologies Used](#technologies-used)
 * [Deployment](#deployment)
 * [Credits](#credits)
+* [Acknowledgments](#acknowledgments)
 
+# Design
+## View
+- The game interface is centered in the middle of the screen, providing a balanced and focused user experience.
+- The width of the elements is defined in percentages, and some media queries in CSS, ensuring that the layout is responsive across different screen sizes.
 
-## Features
+## Colour Scheme
+- The colors chosen for this game were selected to create a visually appealing and accessible interface.
 
-### Existing Features
+### Color Palette
+Here are the colors used in the game:
 
--   __Header__
+1. **Deep Purple**: `#581296`  
+   A rich, dark purple that serves as the primary color for the game.
 
-    - The game consists of a logo on the left and center has the name:  Brain Tic Tac Toe in the center of the header which is good for user interface.
-    - The logo and the name of the game clearly tells the user, that the game is for smart people.
+2. **Bright Green**: `#40ED9F`  
+   A vibrant green used for highlights and actionable buttons.
 
-      ![logo](documentation/gameImages/readMe-logo.png)
-      ![Header](documentation/gameImages/header-img.png)
+3. **Light Gray**: `#E1E0E0`  
+   A subtle light gray that acts as a background color and for secondary UI elements.
 
+4. **Black**: `#000000`  
+   This classic black provides high contrast for text and essential interfaces.
 
--   __Make a choose__
+### [Color Scheme](https://coolors.co/581296-40ed9f-e1e0e0-000000)
 
-    - The option box tells the player to choose from Prayer(O) or Prayer(O) before the game starts.
-    - Once a user chooses a prayer, the game can only begin once the user clicks the button.
+![Design](documentation/gameImages/color-pattern.png)
 
-      ![Option](documentation/gameImages/option-img.png)
+# Features
+## Header
 
--   __Start game and Replay button__
+- The game consists of a logo on the left with "Brain Tic Tac Toe" prominently displayed in the center of the header, providing an excellent user interface.
+- The logo and the name of the game clearly indicate that it is designed for intelligent players.
 
-    - Once the user wins, it pops a winner message, Tie or Try again if you lose then the game is over.
-    - User can click replay button to re-start the game.
-   
-      ![start game](documentation/gameImages/game-start.png)
+![Header](documentation/gameImages/header.png)
 
+## Game Rules 
 
--   __Game results and Replay button__
+- This section outlines the game rules and explains how it is played. The game begins when the user clicks the **Start** button.
 
-     - The Replay button will take the user back to make option section and the user can choose who to be either X or O.
-      ![game results](documentation/gameImages/game-results.png)
+![Game Rules](documentation/gameImages/game-rules.png)
 
--   __Footer__
+## Make a Choice
 
-    - The Footer shows the rules of Brain Power Tic Tac Toe.
-    - The footer clearly states the rules on how to ply the game, this is crucial to the user.
+- The option box prompts the player to choose between Player (X) or Player (O) before the game starts.
+- Once a user chooses a player, the game can only begin when the user clicks the corresponding button.
 
-      ![Footer](documentation/gameImages/Footer-img.png)
+![Make a Choice](documentation/gameImages/choose-player.png)
 
+## Board Game
 
+- Once a user wins, a message pops up indicating the winner, and if it’s a tie, it prompts the user with options to "Try Again" or acknowledge their loss—at which point the game is over.
+- The user can click the **Replay** button to restart the game.
 
-### Features which could be implemented in the future
+![Board Game](documentation/gameImages/boardgame.png)
 
-- __future implementation__
-    - I wish the loser could be the first one to play, once a replay button is placed given that on clicking replay one has to select who to be from player-X and player-O which I find tricky for now.
+- The Replay button resets the game, allowing the user to start over without changing their initial role as an X-player or O-player.
+- The user always has the chance to be the first player to choose a cell on the game board, after which the computer plays as either X or O, depending on the user's choice.
 
-- __predication improvements__
-    - When the first player starts from the corner he/she has higher chances of winning the game.
-    - I could predict my win or the computer's next move even if it has to be random, not sure if it is just my intuition.
+## View Winners or Draws
 
-## Design
+- Once the game is finished, players can choose to replay or exit the game.
+- If they opt to **Replay**, the game resets.
+- If they choose to **Exit**, they are returned to the game rules, giving them a chance to select a new player (either X or O) before starting a new game.
 
--   ### View
-- It is in the middle of the screen
-- the width of the elements is in percentage, so I didn't need to use media query in CSS for it to be responsive 
+Below are the examples of how the game displays outcomes:
 
--   ### Colour Scheme [Color Scheme](https://coolors.co/581296-40ed9f-e1e0e0-000000-816c61)
+### Winning Results
+- **O Results**  
+  ![O-results](documentation/gameImages/o-win.png)
+
+- **X Results**  
+  ![X-results](documentation/gameImages/x-win.png)
+
+### Draw Result
+- **Draw Results**  
+  ![Draw-results](documentation/gameImages/draw.png)
+
+## Future Implementation
+
+- I wish for the loser to have the opportunity to play first in the next round when the **Replay** button is clicked. This would provide a fair chance for all players and add excitement to the game.
+
+- I plan to implement an option that allows users to choose to play with a friend or against the computer. Currently, the game defaults to a single-player mode against the computer, but adding a multiplayer mode would enhance the social experience and engagement.
+
+# Testing
+
+- Lighthouse desktop testing: ![Performance diagnodtics](documentation/validation/lighthouse-desktop.png)
   
-![design](documentation/gameImages/color-design.jpg)
+- lighthouse mobile testing: ![Performance diagnodtics](documentation/validation/lighthouse-mobile.png)
 
-## Technologies Used
+## Validator Testing
 
-### Languages Used
+- [HTML Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fein-1.github.io%2FBrain-Tic-Tac-Toe%2F)
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  ![HTML checker](documentation/validation/html-testing.png)
+  - There are no errors or warnings found.
 
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fein-1.github.io%2FBrain-Tic-Tac-Toe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-### Libraries & Programs Used
-
--   [Google Fonts:](https://fonts.google.com/) was used to import the 'Familjen and Grotesk' fonts into the style.css file which are used in this project.
--   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
--   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [iLoveIMG:](https://www.iloveimg.com/) was used for resizing images.
--   [favicon:](https://www.favicon.cc/) was used to add icon in the browser.
--   [logomaker:](https://www.logomaker.net/) was used to have a logo for aesthetic and UX purposes.
--   [remove image background](https://www.remove.bg/) was used to remove the logo background.
--   [mockup generator](https://ui.dev/amiresponsive?url=%20https://ein-1.github.io/Brain-Tic-Tac-Toe/) was used to test different screen responsive devices.
-
-
-## Testing
-
-- Lighthouse testing: ![results](documentation/validation/lighthouseTesting.png)
-  
-- performance: ![Performance diagnodtics](documentation/validation/performanceDiagnostics.png)
-
-### Validator Testing
-
-- [HTML Validator](https://validator.w3.org/)
-
-    - HTML Url checker
-      ![HTML checker](documentation/validation/html-checker.png)
-    - HTML input validator
-      ![HTML results](documentation/validation/htmlValidator.png)
-    - HTML warning
-      ![HTML warning](documentation/validation/html-warning.png)
-    - The warning is caused by not have a headering in h2 but i wanted it blank.
-
-
-- [CSS Validator](https://jigsaw.w3.org/css-validator/)
-
-    - CSS results
-      ![CSS results](documentation/validation/cssValidator.png)
-      ![CSS warning](documentation/validation/css-warning.png)
-    - There is only 1 warning and it is due to import of the Google fonts.
+  ![CSS results](documentation/validation/css-testing.png)
+  - There are no errors or warnings found.
 
 - [JavaScript Validator](https://jshint.com/)
-  
-    - JavaScript results
-     
-      ![JavaScript warning](documentation/validation/warning-jshint-1.png)
-      ![JavaScript warning improved](documentation/validation/warning-jshint-2.png)
-    - The warning was caused by jshint version 6 issues [jshint throwing warning](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) but was I put in jshint option it cleared as shown above.
+       
+  ![JavaScript warning](documentation/validation/jshint-test.png)
+    - There are no errors found.
 
-  
-### Browser Compatibility
+- [Web Accessibility Evaluation Tool Validator](https://wave.webaim.org/report#/https://ein-1.github.io/Brain-Tic-Tac-Toe/)
+  ![WebAim](documentation/validation/WebAIM-testing.png)
+   - There are no errors, alerts or contrast errors found.
+
+## Errors
+
+- User choosing between player X OR O
+    
+  - `Initial error:`
+  The computer was fixed as 'O' by default, making it difficult for the user to select 'O'. Even when the option box allowed the user to select 'Play O', the game logic did not respond correctly—allowing the user to make their second move before the computer could take action with 'X'.
+
+  - `Fixed error:` This behavior was improved by implementing a new variable called aComputer which tracks the symbol that the computer takes after the user makes their selection. This ensures that the game flow is intuitive and that both the player and the computer can interact more directly. 
+
+  Below is the Fixed Code:
+      ![fixed option code](documentation/errors/fixed-option-code.png)
+
+- Hightlight color could not reset when Exit or Replay button is clicked
+  ![O-results](documentation/errors/reset-color.png)
+
+  - `Initial error:` 
+  The highlight color was stuck on the game area cells, and even when the Replay or Exit buttons were clicked, the colors did not change. This meant that players could continue playing without a proper visual reset of the game state, making it confusing when starting a new game.
+  - `Fixed error:`
+  To resolve this issue, I set up code in the resetGame and endGame functions to clear all cell highlights whenever the Replay or Exit buttons are clicked. This ensures that when starting a new game or exiting to the rules, the game area is visually reset to its initial state.
+
+Below is the Fixed Code:
+    ![fixed color code](documentation/errors/color-fixed-code.png)
+
+## Browser Compatibility
 
     - Testing has been carried out on the following browsers :
     - Chrome (64-bit)
     - Firefox (64-bit)
     - Edge (64-bit)
-  
 
-## Deployment
 
-### How this site was deployed
+# Technologies Used
 
-- In the GitHub repository, navigate to the Settings tab, then choose Pages from the left hand menu 
-- From the source section drop-down menu, select the Master Branch
-- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
-- Any changes pushed to the master branch will take effect on the live project
+## Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-  The live link can be found here - [Brain Tic Tac Toe]( https://ein-1.github.io/Brain-Tic-Tac-Toe/) 
+## Libraries & Programs Used
+- [Google Fonts](https://fonts.google.com/) was used to import the 'Familjen' and 'Grotesk' fonts into the style.css file.
+- [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/) serves as the repository for the project's code after being pushed from Git.
+- [iLoveIMG](https://www.iloveimg.com/) was used for resizing images.
+- [Favicon](https://www.favicon.cc/) was used to add an icon in the browser.
+- [LogoMaker](https://www.logomaker.net/) was used to create a logo for aesthetic and UX purposes.
+- [Remove Image Background](https://www.remove.bg/) was used to remove the logo background.
+- [Mockup Generator](https://ui.dev/amiresponsive?url=https://ein-1.github.io/Brain-Tic-Tac-Toe/) was used to test the game on different responsive devices.
 
-### How to clone the repository
+# Deployment
 
-- Go to the https://github.com/EIN-1/Brain-Tic-Tac-Toe repository on GitHub 
-- Click the "Code" button to the right of the screen, click HTTPs and copy the link there
-- Open a GitBash terminal and navigate to the directory where you want to locate the clone
-- On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
- 
-## Credits 
-- javaScript : [code institute](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
-- Code Hawk : [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
-- A Complete Overview of JavaScript Events : [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
+## How This Site Was Deployed
+- In the GitHub repository, navigate to the Settings tab, then choose Pages from the left-hand menu.
+- From the source section drop-down menu, select the Master Branch.
+- Once the master branch has been selected, the page will automatically refresh with a detailed ribbon display to indicate the successful deployment.
+- Any changes pushed to the master branch will take effect on the live project.
+
+The live link can be found here - [Brain Tic Tac Toe](https://ein-1.github.io/Brain-Tic-Tac-Toe/) 
+
+## How to Clone the Repository
+1. Go to the [GitHub Repository](https://github.com/EIN-1/Brain-Tic-Tac-Toe).
+2. Click the "Code" button to the right of the screen, select HTTPS, and copy the link.
+3. Open a Git Bash terminal and navigate to the directory where you want to clone the repository.
+4. Type `git clone`, paste the copied URL, and press Enter to start the clone process.
+
+# Credits 
+- JavaScript: [Code Institute](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
+- Code Hawk: [The Queen's Pawn](https://youtu.be/n6gzxTsbHLc?si=aDJ1GpVS_6qi2efs)
+- A Complete Overview of JavaScript Events: [dcode](https://youtu.be/YiOlaiscqDY?si=wTdI2AmbCT6C8pmX)
 - Game: [Bro Code](https://youtu.be/AnmwHjpEhtA?si=V_dSDNVMDIO-d6fQ)
-- Color contrast : [matching colors](https://dequeuniversity.com/rules/axe/4.8/color-contrast)
-- The jshint verson warnings : [JShint version issue](https://youtu.be/QDzeU1FUZRk?si=hFpzXqylDbD5_o7K)
-- Jshint warning version issues : [stackoverflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
-- amiresponsive : [mockup generator](https://ui.dev/amiresponsive?url=%20https://ein-1.github.io/Brain-Tic-Tac-Toe/)
+- Color Palettes Generator: [Coolors](https://coolors.co/581296-40ed9f-e1e0e0-000000-000000)
+- Color Contrast Checker: [Coolors](https://coolors.co/contrast-checker/581296-e1e0e0)
+- JSHint Version Warnings: [JSHint Version Issue](https://youtu.be/QDzeU1FUZRk?si=hFpzXqylDbD5_o7K)
+- JSHint Warning Version Issues: [StackOverflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
+- AmiResponsive: [Mockup Generator](https://ui.dev/amiresponsive?url=https://ein-1.github.io/Brain-Tic-Tac-Toe/)
 
-### Content 
-- Content on the game was based on:
-- [you tube](https://www.youtube.com/)
-- [stackoverflow](https://stackoverflow.com/)
-- [code institute](https://learn.codeinstitute.net)
-- All other content was written by the developer.
+## Content 
+- Content for the game was based on:
+  - [YouTube](https://www.youtube.com/)
+  - [StackOverflow](https://stackoverflow.com/)
+  - [Code Institute](https://learn.codeinstitute.net)
+  - All other content was written by the developer.
 
-### Code
+## Code
+- How to create a slider in CSS and JavaScript: [YouTube Videos on How to Build Tic Tac Toe](https://youtu.be/n6gzxTsbHLc?si=53Mkqg3-Gb_kX1qF)
+- Tutorials on creating Tic Tac Toe: [YouTube Videos](https://www.youtube.com/)
+- How to call functions: [Code Institute](https://codeinstitute.net)
 - How to create a slider in CSS and JavaScript : [youtube videos on how to build tic tac toe](https://youtu.be/n6gzxTsbHLc?si=53Mkqg3-Gb_kX1qF)
 - How to create tic tac toe videos from the ones I credited above : [youtube videos on how to build tic tac toe](https://www.youtube.com/)
-- How to call functions : [code institute](https://codeinstitute.net)
-- How to hide and show container element when i click the button :  [container hide and show](https://stackoverflow.com/questions/22242686/container-hide-and-show)
 - How to munipulate some function to do specific tasks : [W3Schools The inner Element Object](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_textcontent_innerhtml_innertext)
+- Tic Tac Toe - win highlighted : [codepen.io](https://codepen.io/farrukhhassan/pen/mjOxZO)
+- How to create a Tic Tac Toe : [Canan Korkut](https://medium.com/@canankorkut1/how-to-create-a-tic-tac-toe-with-html-css-and-javascript-10a25fddd356)
+- How to get players to take turns in JavaScript : [Stackoverflow](https://stackoverflow.com/questions/65351388/how-to-get-players-to-take-turns-in-javascript-tic-tac-toe-project)
 
-### Media 
+## Media 
 
-- The fonts used were imported from [Google Fonts](https://fonts.google.com/)
-- The favicon was created from [favicon](https://www.favicon.cc/)
-- The logo was created using [logomaker](https://www.logomaker.net/)
-- The logo image was resize using [iloveimg](https://www.iloveimg.com/)
-- The logo background was removed using [remove image background](https://www.remove.bg/)
+- The fonts used in the game were imported from [Google Fonts](https://fonts.google.com/).
+- The favicon was created using [Favicon](https://www.favicon.cc/).
+- The logo was designed using [LogoMaker](https://www.logomaker.net/).
+- The logo image was resized using [iLoveIMG](https://www.iloveimg.com/).
+- The logo background was removed using [Remove Image Background](https://www.remove.bg/).
 
-### Acknowledgments
 
-- I want to thank my cohort facilitator madam Kay Welfare who always check up on me when am lost in my course and am grateful for giving me good advice and feedback on how to plan and execute this project and who provided me with lots of pointers on resources like where to look when looks for colors, resizing images and so on that helped me on this project.
+# Acknowledgments
 
-- Thanks to code institute and staff for always providing me with important pointers and resourses to enable me wided my coding scope and knowlege.
-- This readyME file was inspired by : [code institute - Rock,Paper,scissor](https://codeinstitute.net)
-- This game was created as a project and it was a great experience making this game work
+- I would like to express my gratitude to my cohort facilitator, Madam Kay Welfare, for always checking in on me during my course. I am thankful for the invaluable advice and feedback she provided on how to plan and execute this project. Her pointers on resources, including where to find colors, resizing images, and more, were immensely helpful.
 
-### Developed by 
-- Elsie Nagawa 
-  21.12.23
+- Thanks to the Code Institute staff for consistently offering essential guidance and resources that have broadened my coding skills and knowledge.
+
+- This README file was inspired by the [Code Institute - Rock, Paper, Scissors](https://codeinstitute.net) project.
+
+- Creating this game as part of my Project Profilo 2 was a great experience, and I truly appreciate all the support I received along the way.
+
+## Developed by 
+- **Elsie Nagawa**
+  30.11.2025
