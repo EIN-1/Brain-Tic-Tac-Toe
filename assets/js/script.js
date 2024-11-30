@@ -74,9 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentPlayer === 'X') {
             slider.style.left = '0';         // Position slider to the left for player X
             slider.style.right = 'auto';     // Reset right property
+            console.log("slider updated for left side for X-player");
         } else {
             slider.style.left = 'auto';      // Reset left property
             slider.style.right = '0';        // Position slider to the right for player O
+            console.log("slider updated for right side for O-player");
         }
     }
 
@@ -90,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (checkWin(currentPlayer)) {
                 displayResult(`${currentPlayer} Wins!`);
                 gameEnded = true;
-                console.log(`${currentPlayer} has won the game.`);
+                console.log(`${currentPlayer} has won`);
             } else if (gameState.every(cell => cell !== "")) {
                 displayResult("It's a Draw!");
                 gameEnded = true; // ended game for draw
@@ -162,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.classList.remove('win-cell'); // win highlight removed
             cell.classList.remove('draw-cell'); // if exists draw highlight will be removed
         });
+        console.log("Game rested.");
     }
 
     // Exit button listener 
@@ -181,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.classList.remove('win-cell'); // win highlight removed
             cell.classList.remove('draw-cell'); // if exists draw highlight will be removed
         });
+        console.log("Game exited and all higlights are removed.");
     }
 
     // winner function which returns true if a player has won.
@@ -188,9 +192,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const winnerCombinations = winningCombinations.some(condition =>
             condition.every(index => gameState[index] === player)
         );
+        console.log(`checking winner: ${player}`);
         // the winning cells will change color
         if (winnerCombinations) {
             colorWinningCells(player);
+            console.log(`${player} has won`);
         }
 
         return winnerCombinations;
@@ -202,6 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (combination.every(index => gameState[index] === player)) {
             combination.forEach(index => {
                 cells[index].classList.add('win-cell'); // added a win-cell class to color winning cells
+                console.log(`cell ${index} is a winning cell for ${player}`);
             });
         }
     });
