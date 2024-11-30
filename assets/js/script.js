@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         gameContainer.style.display = 'block'; // show the gameContainer
         resetGame(); // rest game state if replay button is clicked
         updateTurns(); // update slider position depending on player's turn
+        console.log(`Game started! You are playing as ${selectedPlayer}. Computer is ${aComputer}.`);
+
     }
 
     // Setting up listeners for game cell clicks
