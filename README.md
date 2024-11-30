@@ -285,4 +285,4 @@ The live link can be found here - [Brain Tic Tac Toe](https://ein-1.github.io/Br
 
 ## Developed by 
 - **Elsie Nagawa**
-  30.11.2025
+  30.11.2024
